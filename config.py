@@ -12,7 +12,7 @@ APP_NAMESPACE = 'placement'
 INTENT_CLASSIFIER_CONFIG = {
     'model_type': 'text',
     'model_settings': {
-        'classifier_type': 'dtree'
+        'classifier_type': 'logreg'
     },
     'param_selection': {
         'type': 'k-fold',
