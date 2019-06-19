@@ -3,5 +3,6 @@
 from nlp_intern.root import app
 
 import nlp_intern.greeting
+import nlp_intern.unsupported
 
 __all__ = ['app']
