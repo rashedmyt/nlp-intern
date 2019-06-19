@@ -4,6 +4,7 @@
 # The namespace of the application. Used to prevent collisions in supporting services across
 # applications. If not set here, the app's enclosing directory name is used.
 # APP_NAMESPACE = 'app-name'
+APP_NAMESPACE = 'placement'
 
 # Dictionaries for the various NLP classifier configurations
 
