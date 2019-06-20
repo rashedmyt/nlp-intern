@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "id": "1",
+            "cname": "Google",
+            "whitelist": [
+                "google",
+                "googel",
+                "GOOGLE",
+                "GOOGEL",
+                "googl",
+                "GOOGL"
+            ]
+        },
+        {
+            "id": "2",
+            "cname": "Oracle",
+            "whitelist": [
+                "oracle",
+                "ORACLE",
+                "oracl",
+                "ORACL",
+                "orcle",
+                "ORCLE"
+            ]
+        },
+        {
+            "id": "3",
+            "cname": "Wipro",
+            "whitelist": [
+                "wipro",
+                "WIPRO",
+                "wepro",
+                "WEPRO",
+                "Vipro",
+                "vipro",
+                "VIPRO"
+            ]
+        },
+        {
+            "id": "4",
+            "cname": "JP Morgan",
+            "whitelist": [
+                "jpmorgan",
+                "morgan",
+                "JPMC",
+                "JPMORGAN",
+                "MORGAN"
+            ]
+        }
+    ]
+}
