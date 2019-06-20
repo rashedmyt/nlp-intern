@@ -1,0 +1,98 @@
+[
+	{
+		"id": "1",
+		"name": "Google",
+		"data": {
+			"2018": {
+				"highest_sal": "45lpa",
+				"lowest_sal": "15lpa",
+				"average_sal": "25lpa",
+				"total_recruits": 10
+			},
+			"2016": {
+				"highest_sal": "30lpa",
+				"lowest_sal": "10lpa",
+				"average_sal": "13lpa",
+				"total_recruits": 8
+			},
+			"2015": {
+				"highest_sal": "28lpa",
+				"lowest_sal": "10lpa",
+				"average_sal": "15lpa",
+				"total_recruits": 7
+			}
+		}
+	},
+	{
+		"id": "2",
+		"name": "Oracle",
+		"data": {
+			"2017": {
+				"highest_sal": "15lpa",
+				"lowest_sal": "4lpa",
+				"average_sal": "6.5lpa",
+				"total_recruits": 4
+			},
+			"2016": {
+				"highest_sal": "12lpa",
+				"lowest_sal": "4lpa",
+				"average_sal": "6lpa",
+				"total_recruits": 8
+			},
+			"2014": {
+				"highest_sal": "10lpa",
+				"lowest_sal": "4lpa",
+				"average_sal": "5.5lpa",
+				"total_recruits": 5
+			}
+		}
+	},
+	{
+		"id": "3",
+		"name": "Wipro",
+		"data": {
+			"2018": {
+				"highest_sal": "6.5lpa",
+				"lowest_sal": "3.5lpa",
+				"average_sal": "4lpa",
+				"total_recruits": 20
+			},
+			"2017": {
+				"highest_sal": "6lpa",
+				"lowest_sal": "3lpa",
+				"average_sal": "4.5lpa",
+				"total_recruits": 18
+			},
+			"2014": {
+				"highest_sal": "6lpa",
+				"lowest_sal": "3.5lpa",
+				"average_sal": "4.5lpa",
+				"total_recruits": 15
+			}
+		}
+	},
+	{
+		"id": "4",
+		"name": "JP Morgan",
+		"data": {
+			"2018": {
+				"highest_sal": "11lpa",
+				"lowest_sal": "9lpa",
+				"average_sal": "10lpa",
+				"total_recruits": 6
+			},
+			"2017": {
+				"highest_sal": "9lpa",
+				"lowest_sal": "7lpa",
+				"average_sal": "8lpa",
+				"total_recruits": 8
+			},
+			"2016": {
+				"highest_sal": "7lpa",
+				"lowest_sal": "6lpa",
+				"average_sal": "6.5lpa",
+				"total_recruits": 7
+			}
+		}
+	}
+]
