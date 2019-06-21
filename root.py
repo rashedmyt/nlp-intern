@@ -10,5 +10,5 @@ app = Application(__name__)
 __all__ = ['app']
 
 qa = QuestionAnswerer(app_path='nlp_intern')
-qa.load_kb(app_namespace='nlp_intern', index_name='companies',
-           data_file='./data/companies.json')
+qa.load_kb(app_namespace='placement', index_name='companies',
+           data_file='nlp_intern/data/companies.json')
