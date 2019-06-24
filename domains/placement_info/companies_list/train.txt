@@ -12,3 +12,31 @@ list
 list companies
 open list
 open list of companies
+Show list of companies in {2015|sys_time}
+display list of companies in {2015|sys_time}
+which companies came for placements in {2015|sys_time}
+show list in {2015|sys_time}
+display list in {2015|sys_time}
+which companies came to our college in {2015|sys_time}
+how many companies came to our college in {2015|sys_time}
+how many companies came to placements in {2015|sys_time}
+how many companies came for placements in {2015|sys_time}
+list of companies in {2015|sys_time}
+list in {2015|sys_time}
+list companies in {2015|sys_time}
+open list in {2015|sys_time}
+open list of companies in {2015|sys_time}
+Show list of companies came {last year|sys_time}
+display list of companies came {last year|sys_time}
+which companies came for placements {last year|sys_time}
+show list which came {last year|sys_time}
+display list which came {last year|sys_time}
+which companies came to our college came {last year|sys_time}
+how many companies came to our college {last year|sys_time}
+how many companies came to placements {last year|sys_time}
+how many companies came for placements {last year|sys_time}
+list of companies came {last year|sys_time}
+list came {last year|sys_time}
+list companies came {last year|sys_time}
+open list came {last year|sys_time}
+open list of companies came {last year|sys_time}

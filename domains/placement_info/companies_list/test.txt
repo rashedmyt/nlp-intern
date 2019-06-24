@@ -2,3 +2,10 @@ show the companies came for placements
 which companies came to college
 display list of companies came for placements
 how many companies came
+list of companies in 2017
+display companies which came last year
+show companies in 2010
+how many companies came for placements last year
+open list of companies
+show the companies came to college last year
+list of companies came to college in 2018
