@@ -3,9 +3,11 @@ import requests
 import signal
 import sys
 
+
 def handle_sigint(sig, frame):
     print('\n\nThank you for using the application.\nClosing now...')
     sys.exit(0)
+
 
 URL = 'http://localhost:7150/parse'
 
@@ -25,10 +27,9 @@ reply = data['directives'][0]['payload']['text']
 print('App: ' + reply)
 
 while True:
-    print("\n\nPayload Data:\n" + json.dumps(data))
     inp = input('You: ')
 
-    payload = '{"text":"%s", "frame":%s}' %(inp,json.dumps(data['frame']))
+    payload = '{"text":"%s", "frame":%s}' % (inp, json.dumps(data['frame']))
 
     response = requests.post(url=URL, headers=headers, data=payload)
 
