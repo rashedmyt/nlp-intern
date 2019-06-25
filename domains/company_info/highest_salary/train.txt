@@ -1,0 +1,24 @@
+What is the highest salary given
+highest salary given
+What is the maximum salary given
+maximum salary given
+What is the max salary given
+max salary given
+What is the highest salary given by {google|company_name}
+highest salary given by {google|company_name}
+What is the maximum salary given by {google|company_name}
+maximum salary given by {google|company_name}
+What is the max salary given by {google|company_name}
+max salary given by {google|company_name}
+What is the highest salary given by {google|company_name} in {2015|sys_time}
+highest salary given by {google|company_name} in {2015|sys_time}
+What is the maximum salary given by {google|company_name} in {2015|sys_time}
+maximum salary given by {google|company_name} in {2015|sys_time}
+What is the max salary given by {google|company_name} in {2015|sys_time}
+max salary given by {google|company_name} in {2015|sys_time}
+What is the highest salary given by {google|company_name} {last year|sys_time}
+highest salary given by {google|company_name} {last year|sys_time}
+What is the maximum salary given by {google|company_name} {last year|sys_time}
+maximum salary given by {google|company_name} {last year|sys_time}
+What is the max salary given by {google|company_name} {last year|sys_time}
+max salary given by {google|company_name} {last year|sys_time}
