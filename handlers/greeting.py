@@ -1,4 +1,4 @@
-from .root import app
+from nlp_intern.root import app
 
 
 @app.handle(intent='greet')

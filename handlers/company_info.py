@@ -1,5 +1,5 @@
-from .root import app
-from .root import qa
+from nlp_intern.root import app
+from nlp_intern.root import qa
 from .helpers import handle_highest_salary, handle_last_recruitment
 
 

@@ -1,5 +1,5 @@
-from .root import app
-from .root import qa
+from nlp_intern.root import app
+from nlp_intern.root import qa
 
 
 @app.handle(intent='specify_company')
