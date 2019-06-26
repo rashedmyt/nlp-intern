@@ -14,6 +14,8 @@ def specify_company(request, responder):
                 handle_last_recruitment(company_name, responder)
             elif request.frame['desired_action'] == "highest_salary":
                 handle_salary(company_name, year, "highest", responder)
+            elif request.frame['desired_action'] == "lowest_salary":
+                handle_salary(company_name, year, "lowest", responder)
         except KeyError:
             print("please specify some action")
     else:
@@ -31,6 +33,8 @@ def specify_year(request, responder):
         try:
             if request.frame['desired_action'] == "highest_salary":
                 handle_salary(company_name, year, "highest", responder)
+            elif request.frame['desired_action'] == "lowest_salary":
+                handle_salary(company_name, year, "lowest", responder)
         except KeyError:
             print("Please specify some action")
     else:
