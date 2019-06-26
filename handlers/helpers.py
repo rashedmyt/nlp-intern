@@ -30,7 +30,7 @@ def specify_year(request, responder):
     company_name = request.frame.get('company_name')
     year = next((e['value'][0]['value'][0:4]
                  for e in request.entities if e['type'] == 'sys_time'), None)
-    print(year)
+
     if company_name:
         try:
             if request.frame['desired_action'] == "highest_salary":
@@ -64,18 +64,18 @@ def handle_salary(company_name, year, category, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
+    responder.frame['desired_action'] = "%s_salary" % (category)
+    if year:
+        responder.frame['year'] = year
 
     if year in company['data']:
-        responder.frame['year'] = year
         salary = company['data'][year]['%s_sal' % (category)]
         reply = "%s gave a %s salary of %s in the year %s" % (
             company_name, category, salary, year)
         responder.reply(reply)
     elif year:
-        responder.frame['year'] = year
         reply = company_name + " didn't came for placements in " + year
         responder.reply(reply)
     else:
-        responder.frame['desired_action'] = "%s_salary" % (category)
         responder.reply("Of course, which year?")
         responder.listen()
