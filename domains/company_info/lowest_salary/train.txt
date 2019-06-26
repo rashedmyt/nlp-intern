@@ -1,0 +1,54 @@
+What is the lowest salary given
+lowest salary given
+What is the minimum salary given
+minimum salary given
+What is the min salary given
+min salary given
+lowest salary
+minimum salary
+min salary
+What is the lowest salary given by {google|company_name}
+lowest salary given by {google|company_name}
+What is the minimum salary given by {google|company_name}
+minimum salary given by {google|company_name}
+What is the min salary given by {google|company_name}
+min salary given by {google|company_name}
+lowest salary by {google|company_name}
+minimum salary by {google|company_name}
+min salary by {google|company_name}
+What is the lowest salary given by {google|company_name} in {2015|sys_time}
+lowest salary given by {google|company_name} in {2015|sys_time}
+What is the minimum salary given by {google|company_name} in {2015|sys_time}
+minimum salary given by {google|company_name} in {2015|sys_time}
+What is the min salary given by {google|company_name} in {2015|sys_time}
+min salary given by {google|company_name} in {2015|sys_time}
+lowest salary by {google|company_name} in {2015|sys_time}
+minimum salary by {google|company_name} in {2015|sys_time}
+min salary by {google|company_name} in {2015|sys_time}
+What is the lowest salary given by {google|company_name} {last year|sys_time}
+lowest salary given by {google|company_name} {last year|sys_time}
+What is the minimum salary given by {google|company_name} {last year|sys_time}
+minimum salary given by {google|company_name} {last year|sys_time}
+What is the min salary given by {google|company_name} {last year|sys_time}
+min salary given by {google|company_name} {last year|sys_time}
+lowest salary by {google|company_name} {last year|sys_time}
+minimum salary by {google|company_name} {last year|sys_time}
+min salary by {google|company_name} {last year|sys_time}
+What is the lowest salary given in {2015|sys_time}
+lowest salary given in {2015|sys_time}
+What is the minimum salary given in {2015|sys_time}
+minimum salary given in {2015|sys_time}
+What is the min salary given in {2015|sys_time}
+min salary given in {2015|sys_time}
+lowest salary in {2015|sys_time}
+minimum salary in {2015|sys_time}
+min salary by in {2015|sys_time}
+What is the lowest salary given {last year|sys_time}
+lowest salary given {last year|sys_time}
+What is the minimum salary given {last year|sys_time}
+minimum salary given {last year|sys_time}
+What is the min salary given {last year|sys_time}
+min salary given {last year|sys_time}
+lowest salary {last year|sys_time}
+minimum salary {last year|sys_time}
+min salary by {last year|sys_time}
