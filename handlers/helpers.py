@@ -13,7 +13,7 @@ def specify_company(request, responder):
             if request.frame['desired_action'] == "last_recruitment":
                 handle_last_recruitment(company_name, responder)
             elif request.frame['desired_action'] == "highest_salary":
-                handle_highest_salary(company_name, year, responder)
+                handle_salary(company_name, year, "highest", responder)
         except KeyError:
             print("please specify some action")
     else:
@@ -30,7 +30,7 @@ def specify_year(request, responder):
     if company_name:
         try:
             if request.frame['desired_action'] == "highest_salary":
-                handle_highest_salary(company_name, year, responder)
+                handle_salary(company_name, year, "highest", responder)
         except KeyError:
             print("Please specify some action")
     else:
@@ -52,22 +52,22 @@ def handle_last_recruitment(company_name, responder):
     responder.reply(reply)
 
 
-def handle_highest_salary(company_name, year, responder):
+def handle_salary(company_name, year, category, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
 
     if year in company['data']:
         responder.frame['year'] = year
-        highest_salary = company['data'][year]['highest_sal']
-        reply = company_name + " gave a highest salary of " + \
-            highest_salary + " in the year " + year
+        salary = company['data'][year]['%s_sal' % (category)]
+        reply = "%s gave a %s salary of %s in the year %s" % (
+            company_name, category, salary, year)
         responder.reply(reply)
     elif year:
         responder.frame['year'] = year
         reply = company_name + " didn't came for placements in " + year
         responder.reply(reply)
     else:
-        responder.frame['desired_action'] = "highest_salary"
+        responder.frame['desired_action'] = "%s_salary" % (category)
         responder.reply("Of course, which year?")
         responder.listen()

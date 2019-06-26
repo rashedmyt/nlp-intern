@@ -1,6 +1,6 @@
 from nlp_intern.root import app
 from nlp_intern.root import qa
-from .helpers import handle_highest_salary, handle_last_recruitment
+from .helpers import handle_salary, handle_last_recruitment
 
 
 @app.handle(intent='last_recruitment')
@@ -31,7 +31,7 @@ def company_highest_salary(request, responder):
             year = i['value'][0]['value'][0:4]
 
     if company_name and year:
-        handle_highest_salary(company_name, year, responder)
+        handle_salary(company_name, year, "highest", responder)
     elif company_name:
         responder.frame['company_name'] = company_name
         responder.frame['desired_action'] = "highest_salary"
