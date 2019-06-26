@@ -73,3 +73,31 @@ def company_lowest_salary(request, responder):
         responder.reply(
             "Sure, which company's lowest salary would you like to know?")
         responder.listen()
+
+
+@app.handle(intent='average_salary')
+def company_average_salary(request, responder):
+    company_name = request.frame.get('company_name')
+    year = request.frame.get('year')
+
+    for i in request.entities:
+        if i['type'] == 'company_name':
+            company_name = i['value'][0]['cname']
+        elif i['type'] == 'sys_time':
+            year = i['value'][0]['value'][0:4]
+
+    if company_name and year:
+        handle_salary(company_name, year, "average", responder)
+    elif company_name:
+        responder.frame['company_name'] = company_name
+        responder.frame['desired_action'] = "average_salary"
+
+        responder.reply("Which year's average salary would you like to know?")
+        responder.listen()
+    else:
+        responder.frame['year'] = year
+        responder.frame['desired_action'] = "average_salary"
+
+        responder.reply(
+            "Sure, which company's average salary would you like to know?")
+        responder.listen()

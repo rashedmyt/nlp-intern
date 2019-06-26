@@ -16,6 +16,8 @@ def specify_company(request, responder):
                 handle_salary(company_name, year, "highest", responder)
             elif request.frame['desired_action'] == "lowest_salary":
                 handle_salary(company_name, year, "lowest", responder)
+            elif request.frame['desired_action'] == "average_salary":
+                handle_salary(company_name, year, "average", responder)
         except KeyError:
             print("please specify some action")
     else:
@@ -35,6 +37,8 @@ def specify_year(request, responder):
                 handle_salary(company_name, year, "highest", responder)
             elif request.frame['desired_action'] == "lowest_salary":
                 handle_salary(company_name, year, "lowest", responder)
+            elif request.frame['desired_action'] == "average_salary":
+                handle_salary(company_name, year, "average", responder)
         except KeyError:
             print("Please specify some action")
     else:
