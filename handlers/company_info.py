@@ -1,11 +1,11 @@
 from nlp_intern.root import app
 from nlp_intern.root import qa
 from .helpers import handle_salary, handle_last_recruitment
-from . import filetest as ft
+from nlp_intern.logger import create_feedback_file
 
 @app.handle(intent='last_recruitment')
 def company_last_year(request, responder):
-    ft.create_feedback_file('company_info',request)
+    create_feedback_file('company_info',request)
     company_name = request.frame.get('company_name')
 
     company_name = next((e['value'][0]['cname']
@@ -23,7 +23,7 @@ def company_last_year(request, responder):
 
 @app.handle(intent='highest_salary')
 def company_highest_salary(request, responder):
-    ft.create_feedback_file('company_info',request)
+    create_feedback_file('company_info',request)
     company_name = request.frame.get('company_name')
     year = request.frame.get('year')
 
@@ -52,7 +52,7 @@ def company_highest_salary(request, responder):
 
 @app.handle(intent='lowest_salary')
 def company_lowest_salary(request, responder):
-    ft.create_feedback_file('company_info',request)
+    create_feedback_file('company_info',request)
     company_name = request.frame.get('company_name')
     year = request.frame.get('year')
 
@@ -81,7 +81,7 @@ def company_lowest_salary(request, responder):
 
 @app.handle(intent='average_salary')
 def company_average_salary(request, responder):
-    ft.create_feedback_file('company_name',request)
+    create_feedback_file('company_name',request)
     company_name = request.frame.get('company_name')
     year = request.frame.get('year')
 

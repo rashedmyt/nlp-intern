@@ -1,6 +1,5 @@
-from nlp_intern.root import app
-from nlp_intern.root import qa
-from . import filetest as ft
+from nlp_intern.root import app,qa
+from nlp_intern.logger import create_feedback_file
 
 @app.handle(intent='companies_list')
 def list_companies(request, responder):

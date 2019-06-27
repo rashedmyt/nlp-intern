@@ -1,5 +1,5 @@
 from nlp_intern.root import app
-from . import filetest
+from nlp_intern.logger import create_feedback_file
 
 @app.handle(default=True)
 @app.handle(intent='unknown')
