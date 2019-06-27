@@ -1,8 +1,11 @@
 from nlp_intern.root import app
-
-
+from datetime import date
+from nlp_intern.logger import create_feedback_file
+import os 
 @app.handle(intent='greet')
 def welcome(request, responder):
+    create_feedback_file('greeting',request)
+
     try:
         # Get user's name from session information in a request to personalize the greeting.
         responder.slots['name'] = request.context['name']
