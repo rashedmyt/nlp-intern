@@ -1,25 +1,22 @@
 from datetime import date
+import logging
 import os
 
 
+feedback_dir = 'nlp_intern/feedback/'
+
+
 def create_feedback_file(domain_name, request):
-    today = date.today()
-    cwd = os.getcwd()
-    access_rights = 0o755
-    foldername = cwd + '/nlp_intern/feedback'
-    try:
-        os.mkdir(foldername, access_rights)
-    except OSError:
-        print()
+    log_dir = feedback_dir + domain_name
+    os.makedirs(log_dir, exist_ok=True)
+    log_file = "%s/%s.txt" % (log_dir, str(date.today()))
 
-    domainfoldername = '/' + domain_name
-    try:
-        os.mkdir(foldername+domainfoldername, access_rights)
-    except OSError:
-        print()
+    # remove any handlers present in root
+    # so that basicConfig can execute
+    for handler in logging.root.handlers[:]:
+        logging.root.removeHandler(handler)
 
-    fname = './nlp_intern/feedback/' + \
-        domain_name + "/" + today.strftime("%d%m%y")
-    f = open(fname + ".txt", 'a')
-    f.write(request.text + '\n')
-    f.close()
+    # setup logging and log the text
+    logging.basicConfig(filename=log_file,
+                        level=logging.INFO, format='%(message)s')
+    logging.info(request.text)
