@@ -1,9 +1,10 @@
 from nlp_intern.root import app
 from nlp_intern.root import qa
-
+from nlp_intern.logger import create_feedback_file
 
 @app.handle(intent='specify_company')
 def specify_company(request, responder):
+    create_feedback_file('helpers',request)
     year = request.frame.get('year')
     company_name = next((e['value'][0]['cname']
                          for e in request.entities if e['type'] == 'company_name'), None)
@@ -27,6 +28,7 @@ def specify_company(request, responder):
 
 @app.handle(intent='specify_year')
 def specify_year(request, responder):
+    create_feedback_file('helpers',request)
     company_name = request.frame.get('company_name')
     year = next((e['value'][0]['value'][0:4]
                  for e in request.entities if e['type'] == 'sys_time'), None)

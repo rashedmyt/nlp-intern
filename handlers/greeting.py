@@ -4,7 +4,6 @@ from nlp_intern.logger import create_feedback_file
 import os 
 @app.handle(intent='greet')
 def welcome(request, responder):
-    print(os.getcwd())
     create_feedback_file('greeting',request)
 
     try:
