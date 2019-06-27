@@ -9,6 +9,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
+  shared_preferences: ^0.5.3+1
+  validators: ^2.0.0+1
 
 dev_dependencies:
   flutter_test:
