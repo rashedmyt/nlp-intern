@@ -1,9 +1,10 @@
 from nlp_intern.root import app
 from nlp_intern.root import qa
-
+from . import filetest as ft
 
 @app.handle(intent='companies_list')
 def list_companies(request, responder):
+    ft.create_feedback_file('placement_info',request)
     asked_year = None
 
     for i in request.entities:
