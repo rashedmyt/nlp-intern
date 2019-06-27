@@ -3,7 +3,7 @@ from nlp_intern.logger import create_feedback_file
 
 @app.handle(intent='companies_list')
 def list_companies(request, responder):
-    ft.create_feedback_file('placement_info',request)
+    create_feedback_file('placement_info',request)
     asked_year = None
 
     for i in request.entities:
