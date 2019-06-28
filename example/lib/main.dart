@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:placement/screens/chat_page.dart';
 import 'package:placement/screens/home_page.dart';
+import 'package:placement/utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() => runApp(PlacementApp());
@@ -10,6 +12,21 @@ class PlacementApp extends StatelessWidget {
     return prefs.containsKey('username');
   }
 
+  Widget showHomePage(bool present) {
+    if (present) {
+      return FutureBuilder<RequestResponse>(
+        future: initialRequest(),
+        builder: (context, snapshot) {
+          return snapshot.hasData
+              ? ChatPage(initMsg: snapshot.data)
+              : Material();
+        },
+      );
+    }
+
+    return HomePage();
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,21 +35,7 @@ class PlacementApp extends StatelessWidget {
       home: FutureBuilder<bool>(
         future: isUserAccountPresent(),
         builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            return snapshot.data
-                ? Scaffold(
-                    body: Center(
-                      child: Text('Chatbot actions takes place here'),
-                    ),
-                  )
-                : HomePage();
-          } else {
-            return Material(
-              child: Center(
-                child: CircularProgressIndicator(),
-              ),
-            );
-          }
+          return snapshot.hasData ? showHomePage(snapshot.data) : Material();
         },
       ),
     );

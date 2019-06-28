@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:placement/screens/chat_page.dart';
+import 'package:placement/utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:validators/validators.dart';
 
@@ -10,38 +12,34 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _scaffoldState = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
-  FocusNode focusNode;
-  String username;
-
-  @override
-  void initState() {
-    super.initState();
-    focusNode = FocusNode();
-    username = '';
-  }
+  FocusNode focusNode = FocusNode();
+  TextEditingController _controller = TextEditingController();
 
   @override
   void dispose() {
     focusNode.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
-  void storeUser() async {
-    var text = '';
-    final prefs = await SharedPreferences.getInstance();
-
+  Future<bool> storeUser() async {
     if (_formKey.currentState.validate()) {
-      text = 'All valid';
-      prefs.setString('username', username);
-    } else {
-      text = 'Something is missing';
+      _scaffoldState.currentState.showSnackBar(
+        SnackBar(
+          content: Text('All Valid'),
+        ),
+      );
+      final prefs = await SharedPreferences.getInstance();
+      return await prefs.setString('username', _controller.text);
     }
 
     _scaffoldState.currentState.showSnackBar(
       SnackBar(
-        content: Text(text),
+        content: Text('Something is missing'),
       ),
     );
+
+    return false;
   }
 
   @override
@@ -57,6 +55,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextFormField(
+                controller: _controller,
                 textInputAction: TextInputAction.next,
                 decoration: InputDecoration(
                   labelText: 'Name',
@@ -70,7 +69,6 @@ class _HomePageState extends State<HomePage> {
                     return 'No special characters';
                 },
                 onFieldSubmitted: (value) {
-                  username = value;
                   FocusScope.of(context).requestFocus(focusNode);
                 },
               ),
@@ -83,8 +81,20 @@ class _HomePageState extends State<HomePage> {
                 validator: (value) {
                   return isIP(value) ? null : 'Enter a Valid IP';
                 },
-                onFieldSubmitted: (value) {
-                  storeUser();
+                onFieldSubmitted: (value) async {
+                  var res = await storeUser();
+                  if (res) {
+                    var msg = await initialRequest();
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => ChatPage(initMsg: msg)));
+                  } else {
+                    showAboutDialog(
+                      context: context,
+                      children: [
+                        Text('Some Error ocurred while storing username')
+                      ],
+                    );
+                  }
                 },
               ),
             ],
