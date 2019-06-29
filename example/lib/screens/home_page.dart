@@ -13,12 +13,14 @@ class _HomePageState extends State<HomePage> {
   final _scaffoldState = GlobalKey<ScaffoldState>();
   final _formKey = GlobalKey<FormState>();
   FocusNode focusNode = FocusNode();
-  TextEditingController _controller = TextEditingController();
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _ipController = TextEditingController();
 
   @override
   void dispose() {
     focusNode.dispose();
-    _controller.dispose();
+    _nameController.dispose();
+    _ipController.dispose();
     super.dispose();
   }
 
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         ),
       );
       final prefs = await SharedPreferences.getInstance();
-      return await prefs.setString('username', _controller.text);
+      return await prefs.setString('username', _nameController.text);
     }
 
     _scaffoldState.currentState.showSnackBar(
@@ -55,7 +57,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextFormField(
-                controller: _controller,
+                controller: _nameController,
                 textInputAction: TextInputAction.next,
                 decoration: InputDecoration(
                   labelText: 'Name',
@@ -76,6 +78,7 @@ class _HomePageState extends State<HomePage> {
                 height: 20,
               ),
               TextFormField(
+                controller: _ipController,
                 focusNode: focusNode,
                 decoration: InputDecoration(labelText: 'IP Address'),
                 validator: (value) {
@@ -84,7 +87,9 @@ class _HomePageState extends State<HomePage> {
                 onFieldSubmitted: (value) async {
                   var res = await storeUser();
                   if (res) {
-                    var msg = await initialRequest();
+                    var msg = await initialRequest(
+                      url: "http://${_ipController.text}:7150/parse",
+                    );
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
                         builder: (context) => ChatPage(initMsg: msg)));
                   } else {

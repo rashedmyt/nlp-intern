@@ -3,12 +3,12 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-const url = "http://192.168.0.5:7150/parse";
+const defaultURL = "http://192.168.0.5:7150/parse";
 var headers = {
   "Content-Type": "application/json",
 };
 
-Future<RequestResponse> initialRequest() async {
+Future<RequestResponse> initialRequest({String url}) async {
   final prefs = await SharedPreferences.getInstance();
   final payload = {
     "text": "Hi",
@@ -18,8 +18,14 @@ Future<RequestResponse> initialRequest() async {
     },
   };
 
+  var temp = prefs.getString('url') ?? defaultURL;
+  if (url != null && url != temp) {
+    await prefs.setString('url', url);
+    temp = url;
+  }
+
   final resp =
-      await http.post(url, headers: headers, body: json.encode(payload));
+      await http.post(temp, headers: headers, body: json.encode(payload));
   if (resp.statusCode == 200) {
     return RequestResponse.fromJson(json.decode(resp.body));
   } else {
