@@ -8,6 +8,22 @@ var headers = {
   "Content-Type": "application/json",
 };
 
+Future<RequestResponse> sendMessage(RequestResponse msg) async {
+  final prefs = await SharedPreferences.getInstance();
+  final url = prefs.getString('url') ?? defaultURL;
+
+  final resp =
+      await http.post(url, headers: headers, body: json.encode(msg.toJson()));
+  if (resp.statusCode == 200) {
+    return RequestResponse.fromJson(json.decode(resp.body));
+  } else {
+    return RequestResponse(
+      text: "I'm not sure what you said. Can you be more specific?",
+      frame: msg.frame,
+    );
+  }
+}
+
 Future<RequestResponse> initialRequest({String url}) async {
   final prefs = await SharedPreferences.getInstance();
   final payload = {
@@ -47,6 +63,6 @@ class RequestResponse {
 
   Map<String, dynamic> toJson() => {
         "text": text,
-        "frame": frame.toString(),
+        "frame": frame,
       };
 }
