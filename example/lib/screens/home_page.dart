@@ -47,6 +47,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Placement Bot'),
+      ),
       key: _scaffoldState,
       body: Container(
         margin: EdgeInsets.symmetric(horizontal: 18),
@@ -84,7 +87,13 @@ class _HomePageState extends State<HomePage> {
                 validator: (value) {
                   return isIP(value) ? null : 'Enter a Valid IP';
                 },
-                onFieldSubmitted: (value) async {
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              RaisedButton(
+                child: Text('Submit'),
+                onPressed: () async {
                   var res = await storeUser();
                   if (res) {
                     var msg = await initialRequest(
