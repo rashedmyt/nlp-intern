@@ -42,12 +42,37 @@ class _ChatPageState extends State<ChatPage> {
           IconButton(
             icon: Icon(Icons.exit_to_app),
             onPressed: () async {
-              final prefs = await SharedPreferences.getInstance();
-              prefs.remove('username');
-              prefs.remove('url');
+              final logoutResult = await showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    title: Text('Logout'),
+                    content: Text('Are you sure you want to logout?'),
+                    actions: <Widget>[
+                      FlatButton(
+                        child: Text('OK'),
+                        onPressed: () => Navigator.of(context).pop(true),
+                      ),
+                      FlatButton(
+                        child: Text('Cancel'),
+                        onPressed: () => Navigator.of(context).pop(false),
+                      ),
+                    ],
+                  );
+                },
+              );
 
-              Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => HomePage()));
+              if (logoutResult) {
+                final prefs = await SharedPreferences.getInstance();
+                prefs.remove('username');
+                prefs.remove('url');
+
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                );
+              }
             },
           ),
         ],
