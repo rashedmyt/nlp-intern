@@ -1,0 +1,34 @@
+{
+    "entities": [
+        {
+            "id": "CSE",
+            "cname": "Computer Science and Engineering",
+            "whitelist": []
+        },
+        {
+            "id": "CIVIL",
+            "cname": "Civil Engineering",
+            "whitelist": []
+        },
+        {
+            "id": "ECE",
+            "cname": "Electronic Communications and Engineering",
+            "whitelist": []
+        },
+        {
+            "id": "EEE",
+            "cname": "Electrical and Electronics Engineering",
+            "whitelist": []
+        },
+        {
+            "id": "MECH",
+            "cname": "Mechanical Engineering",
+            "whitelist": []
+        },
+        {
+            "id": "BME",
+            "cname": "Bio Medical Engineering",
+            "whitelist": []
+        }
+    ]
+}

@@ -1,4 +1,29 @@
-Google
 Oracle
 Wipro
 JP Morgan
+Infor
+Satyam Ventures
+Cyient
+ICS
+Fintech
+Dolcera
+Aurobindo
+Tata Projects
+Fiat
+ADP
+Arcserve
+ITD
+Mathworks
+Service Now
+NCR
+L & T
+Deloitte
+CapGemini
+Accenture
+Infosys
+Pega Systems
+Maruti Suzuki
+Wellsfargo
+ITC
+DE Shaw
+CA Technologies

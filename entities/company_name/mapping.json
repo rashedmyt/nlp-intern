@@ -1,52 +1,149 @@
 {
     "entities": [
         {
-            "id": "1",
-            "cname": "Google",
-            "whitelist": [
-                "google",
-                "googel",
-                "GOOGLE",
-                "GOOGEL",
-                "googl",
-                "GOOGL"
-            ]
-        },
-        {
-            "id": "2",
-            "cname": "Oracle",
-            "whitelist": [
-                "oracle",
-                "ORACLE",
-                "oracl",
-                "ORACL",
-                "orcle",
-                "ORCLE"
-            ]
-        },
-        {
-            "id": "3",
-            "cname": "Wipro",
-            "whitelist": [
-                "wipro",
-                "WIPRO",
-                "wepro",
-                "WEPRO",
-                "Vipro",
-                "vipro",
-                "VIPRO"
-            ]
-        },
-        {
-            "id": "4",
+            "id": 1,
             "cname": "JP Morgan",
-            "whitelist": [
-                "jpmorgan",
-                "morgan",
-                "JPMC",
-                "JPMORGAN",
-                "MORGAN"
-            ]
+            "whitelist": []
+        },
+        {
+            "id": 2,
+            "cname": "DE Shaw",
+            "whitelist": []
+        },
+        {
+            "id": 3,
+            "cname": "ITC",
+            "whitelist": []
+        },
+        {
+            "id": 4,
+            "cname": "Wellsfargo",
+            "whitelist": []
+        },
+        {
+            "id": 5,
+            "cname": "CA Technologies",
+            "whitelist": []
+        },
+        {
+            "id": 6,
+            "cname": "Maruti Suzuki",
+            "whitelist": []
+        },
+        {
+            "id": 7,
+            "cname": "Pega Systems",
+            "whitelist": []
+        },
+        {
+            "id": 8,
+            "cname": "Wipro Limited",
+            "whitelist": []
+        },
+        {
+            "id": 9,
+            "cname": "Infosys",
+            "whitelist": []
+        },
+        {
+            "id": 10,
+            "cname": "Accenture",
+            "whitelist": []
+        },
+        {
+            "id": 11,
+            "cname": "CapGemini",
+            "whitelist": []
+        },
+        {
+            "id": 12,
+            "cname": "Deloitte",
+            "whitelist": []
+        },
+        {
+            "id": 13,
+            "cname": "NCR",
+            "whitelist": []
+        },
+        {
+            "id": 14,
+            "cname": "L & T",
+            "whitelist": []
+        },
+        {
+            "id": 15,
+            "cname": "Service Now",
+            "whitelist": []
+        },
+        {
+            "id": 16,
+            "cname": "Mathworks",
+            "whitelist": []
+        },
+        {
+            "id": 17,
+            "cname": "ITD",
+            "whitelist": []
+        },
+        {
+            "id": 18,
+            "cname": "Arcserve",
+            "whitelist": []
+        },
+        {
+            "id": 19,
+            "cname": "ADP",
+            "whitelist": []
+        },
+        {
+            "id": 20,
+            "cname": "Cyient",
+            "whitelist": []
+        },
+        {
+            "id": 21,
+            "cname": "Fiat",
+            "whitelist": []
+        },
+        {
+            "id": 22,
+            "cname": "Satyam Ventures",
+            "whitelist": []
+        },
+        {
+            "id": 23,
+            "cname": "Tata Projects",
+            "whitelist": []
+        },
+        {
+            "id": 24,
+            "cname": "Oracle",
+            "whitelist": []
+        },
+        {
+            "id": 25,
+            "cname": "ICS",
+            "whitelist": []
+        },
+        {
+            "id": 26,
+            "cname": "Fintech",
+            "whitelist": []
+        },
+        {
+            "id": 27,
+            "cname": "Dolcera",
+            "whitelist": []
+        },
+        {
+            "id": 28,
+            "cname": "Aurobindo",
+            "whitelist": []
+        },
+        {
+            "id": 29,
+            "cname": "Infor",
+            "whitelist": []
         }
     ]
 }
