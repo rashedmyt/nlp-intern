@@ -38,17 +38,24 @@
         {
             "id": 8,
             "cname": "Wipro Limited",
-            "whitelist": []
+            "whitelist": [
+                "wipro",
+                "wipr"
+            ]
         },
         {
             "id": 9,
             "cname": "Infosys",
-            "whitelist": []
+            "whitelist": [
+                "infosys"
+            ]
         },
         {
             "id": 10,
             "cname": "Accenture",
-            "whitelist": []
+            "whitelist": [
+                "accenture"
+            ]
         },
         {
             "id": 11,
@@ -58,12 +65,16 @@
         {
             "id": 12,
             "cname": "Deloitte",
-            "whitelist": []
+            "whitelist": [
+                "deloitte"
+            ]
         },
         {
             "id": 13,
             "cname": "NCR",
-            "whitelist": []
+            "whitelist": [
+                "ncr"
+            ]
         },
         {
             "id": 14,
@@ -73,12 +84,17 @@
         {
             "id": 15,
             "cname": "Service Now",
-            "whitelist": []
+            "whitelist": [
+                "service now",
+                "service"
+            ]
         },
         {
             "id": 16,
             "cname": "Mathworks",
-            "whitelist": []
+            "whitelist": [
+                "mathworks"
+            ]
         },
         {
             "id": 17,
@@ -118,7 +134,11 @@
         {
             "id": 24,
             "cname": "Oracle",
-            "whitelist": []
+            "whitelist": [
+                "oracl",
+                "oracle",
+                "orcle"
+            ]
         },
         {
             "id": 25,

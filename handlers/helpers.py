@@ -13,14 +13,10 @@ def specify_company(request, responder):
         try:
             if request.frame['desired_action'] == "last_recruitment":
                 handle_last_recruitment(company_name, responder)
-            elif request.frame['desired_action'] == "highest_salary":
-                handle_salary(company_name, year, "highest", responder)
-            elif request.frame['desired_action'] == "lowest_salary":
-                handle_salary(company_name, year, "lowest", responder)
-            elif request.frame['desired_action'] == "average_salary":
-                handle_salary(company_name, year, "average", responder)
+            elif request.frame['desired_action'] == "salary":
+                handle_salary(company_name, year, responder)
         except KeyError:
-            print("please specify some action")
+            responder.reply("Please specify some action")
     else:
         responder.reply(
             "Not sure which company you meant there. Can you please try again?")
@@ -35,14 +31,10 @@ def specify_year(request, responder):
 
     if company_name:
         try:
-            if request.frame['desired_action'] == "highest_salary":
-                handle_salary(company_name, year, "highest", responder)
-            elif request.frame['desired_action'] == "lowest_salary":
-                handle_salary(company_name, year, "lowest", responder)
-            elif request.frame['desired_action'] == "average_salary":
-                handle_salary(company_name, year, "average", responder)
+            if request.frame['desired_action'] == "salary":
+                handle_salary(company_name, year, responder)
         except KeyError:
-            print("Please specify some action")
+            responder.reply("Please specify some action")
     else:
         responder.reply(
             "Not sure which company you meant there. Can you please try again?")
@@ -62,18 +54,18 @@ def handle_last_recruitment(company_name, responder):
     responder.reply(reply)
 
 
-def handle_salary(company_name, year, category, responder):
+def handle_salary(company_name, year, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
-    responder.frame['desired_action'] = "%s_salary" % (category)
+    responder.frame['desired_action'] = "salary"
     if year:
         responder.frame['year'] = year
 
     if year in company['data']:
-        salary = company['data'][year]['%s_sal' % (category)]
-        reply = "%s gave a %s salary of %s in the year %s" % (
-            company_name, category, salary, year)
+        salary = company['data'][year]['salary']
+        reply = "%s gave a salary of %s in the year %s" % (
+            company_name, salary, year)
         responder.reply(reply)
     elif year:
         reply = company_name + " didn't came for placements in " + year
