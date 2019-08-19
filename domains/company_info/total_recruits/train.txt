@@ -1,0 +1,13 @@
+how many students got placed
+how many students were placed
+how many students got placed in {2017|sys_time}
+how many placed
+how many placed in {2017|sys_time}
+how many students were placed in {2017|sys_time}
+how many students placed
+how many students placed in {2017|sys_time}
+how many were recruited in {2017|sys_time}
+how many got recruited in {2017|sys_time}
+how many students were recruited by {oracle|company_name}
+students placed in {2017|sys_time}
+how many students did {oracle|company_name} take

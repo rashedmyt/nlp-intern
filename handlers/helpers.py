@@ -15,6 +15,8 @@ def specify_company(request, responder):
                 handle_last_recruitment(company_name, responder)
             elif request.frame['desired_action'] == "salary":
                 handle_salary(company_name, year, responder)
+            elif request.frame['desired_action'] == 'total_recruits':
+                handle_total_recruits(company_name, year, responder)
         except KeyError:
             responder.reply("Please specify some action")
     else:
@@ -33,6 +35,8 @@ def specify_year(request, responder):
         try:
             if request.frame['desired_action'] == "salary":
                 handle_salary(company_name, year, responder)
+            elif request.frame['desired_action'] == 'total_recruits':
+                handle_total_recruits(company_name, year, responder)
         except KeyError:
             responder.reply("Please specify some action")
     else:
@@ -66,6 +70,30 @@ def handle_salary(company_name, year, responder):
         salary = company['data'][year]['salary']
         reply = "%s gave a salary of %s in the year %s" % (
             company_name, salary, year)
+        responder.reply(reply)
+    elif year:
+        reply = company_name + " didn't came for placements in " + year
+        responder.reply(reply)
+    else:
+        responder.reply("Of course, which year?")
+        responder.listen()
+
+def handle_total_recruits(company_name, year, responder):
+    company = qa.get(index='companies', name=company_name)[0]
+
+    responder.frame['company_name'] = company_name
+    responder.frame['desired_action'] = "total_recruits"
+
+    if year:
+        responder.frame['year'] = year
+
+    if year in company['data']:
+        recruits = 0
+        for k in company['data'][year]:
+            if k != 'salary':
+                recruits += company['data'][year][k]
+        reply = "%s recruited total of %s students in the year %s" % (
+            company_name, recruits, year)
         responder.reply(reply)
     elif year:
         reply = company_name + " didn't came for placements in " + year
