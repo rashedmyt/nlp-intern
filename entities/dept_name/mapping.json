@@ -2,33 +2,45 @@
     "entities": [
         {
             "id": "CSE",
-            "cname": "Computer Science and Engineering",
-            "whitelist": []
+            "cname": "CSE",
+            "whitelist": [
+                "cse"
+            ]
         },
         {
             "id": "CIVIL",
-            "cname": "Civil Engineering",
-            "whitelist": []
+            "cname": "CIVIL",
+            "whitelist": [
+                "civil"
+            ]
         },
         {
             "id": "ECE",
-            "cname": "Electronic Communications and Engineering",
-            "whitelist": []
+            "cname": "ECE",
+            "whitelist": [
+                "ece"
+            ]
         },
         {
             "id": "EEE",
-            "cname": "Electrical and Electronics Engineering",
-            "whitelist": []
+            "cname": "EEE",
+            "whitelist": [
+                "eee"
+            ]
         },
         {
             "id": "MECH",
-            "cname": "Mechanical Engineering",
-            "whitelist": []
+            "cname": "MECH",
+            "whitelist": [
+                "mech"
+            ]
         },
         {
             "id": "BME",
-            "cname": "Bio Medical Engineering",
-            "whitelist": []
+            "cname": "BME",
+            "whitelist": [
+                "bme"
+            ]
         }
     ]
 }

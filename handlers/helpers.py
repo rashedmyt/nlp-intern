@@ -6,6 +6,7 @@ from nlp_intern.logger import create_feedback_file
 def specify_company(request, responder):
     create_feedback_file('helpers', request)
     year = request.frame.get('year')
+    dept_name = request.frame.get('dept_name')
     company_name = next((e['value'][0]['cname']
                          for e in request.entities if e['type'] == 'company_name'), None)
 
@@ -16,7 +17,12 @@ def specify_company(request, responder):
             elif request.frame['desired_action'] == "salary":
                 handle_salary(company_name, year, responder)
             elif request.frame['desired_action'] == 'total_recruits':
-                handle_total_recruits(company_name, year, responder)
+                if dept_name:
+                    handle_total_recruits(
+                        company_name, year, dept_name, responder)
+                else:
+                    handle_total_recruits(company_name, year, 'all', responder)
+
         except KeyError:
             responder.reply("Please specify some action")
     else:
@@ -28,6 +34,7 @@ def specify_company(request, responder):
 def specify_year(request, responder):
     create_feedback_file('helpers', request)
     company_name = request.frame.get('company_name')
+    dept_name = request.frame.get('dept_name')
     year = next((e['value'][0]['value'][0:4]
                  for e in request.entities if e['type'] == 'sys_time'), None)
 
@@ -36,7 +43,11 @@ def specify_year(request, responder):
             if request.frame['desired_action'] == "salary":
                 handle_salary(company_name, year, responder)
             elif request.frame['desired_action'] == 'total_recruits':
-                handle_total_recruits(company_name, year, responder)
+                if dept_name:
+                    handle_total_recruits(
+                        company_name, year, dept_name, responder)
+                else:
+                    handle_total_recruits(company_name, year, 'all', responder)
         except KeyError:
             responder.reply("Please specify some action")
     else:
@@ -78,7 +89,8 @@ def handle_salary(company_name, year, responder):
         responder.reply("Of course, which year?")
         responder.listen()
 
-def handle_total_recruits(company_name, year, responder):
+
+def handle_total_recruits(company_name, year, category, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
@@ -89,11 +101,22 @@ def handle_total_recruits(company_name, year, responder):
 
     if year in company['data']:
         recruits = 0
-        for k in company['data'][year]:
-            if k != 'salary':
-                recruits += company['data'][year][k]
-        reply = "%s recruited total of %s students in the year %s" % (
-            company_name, recruits, year)
+        if category == 'all':
+            for k in company['data'][year]:
+                if k != 'salary':
+                    recruits += company['data'][year][k]
+        else:
+            try:
+                recruits = company['data'][year][category]
+            except KeyError:
+                reply = "%s didn't recruit for %s dept in %s" %(company_name, category, year)
+                responder.reply(reply)
+                return
+        reply = "%s recruited total of %s students " % (
+                company_name, recruits)
+        if category != 'all':
+            reply += "from %s " % (category)
+        reply += "in the year %s" % (year)
         responder.reply(reply)
     elif year:
         reply = company_name + " didn't came for placements in " + year

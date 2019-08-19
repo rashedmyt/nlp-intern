@@ -11,3 +11,16 @@ how many got recruited in {2017|sys_time}
 how many students were recruited by {oracle|company_name}
 students placed in {2017|sys_time}
 how many students did {oracle|company_name} take
+how many students got placed from {civil|dept_name}
+how many students were placed from {civil|dept_name}
+how many students got placed in {2017|sys_time} from {civil|dept_name}
+how many placed from {civil|dept_name}
+how many placed in {2017|sys_time} from {civil|dept_name}
+how many students were placed in {2017|sys_time} from {civil|dept_name}
+how many students placed from {civil|dept_name}
+how many students placed in {2017|sys_time} from {civil|dept_name}
+how many were recruited in {2017|sys_time} from {civil|dept_name}
+how many got recruited in {2017|sys_time} from {civil|dept_name}
+how many students were recruited by {oracle|company_name} from {civil|dept_name}
+students placed in {2017|sys_time} from {civil|dept_name}
+how many students did {oracle|company_name} take from {civil|dept_name}

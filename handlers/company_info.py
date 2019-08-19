@@ -53,18 +53,26 @@ def company_salary(request, responder):
 def company_total_recruits(request, responder):
     create_feedback_file('company_name', request)
     company_name = request.frame.get('company_name')
+    dept_name = request.frame.get('dept_name')
     year = request.frame.get('year')
 
     for i in request.entities:
         if i['type'] == 'company_name':
             company_name = i['value'][0]['cname']
+        elif i['type'] == 'dept_name':
+            dept_name = i['value'][0]['cname']
         elif i['type'] == 'sys_time':
             year = i['value'][0]['value'][0:4]
 
     responder.frame['desired_action'] = 'total_recruits'
 
+    if dept_name:
+        category = dept_name
+    else:
+        category = 'all'
+
     if company_name and year:
-        handle_total_recruits(company_name, year, responder)
+        handle_total_recruits(company_name, year, category, responder)
     elif company_name:
         responder.frame['company_name'] = company_name
 
