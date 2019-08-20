@@ -3,9 +3,16 @@
 		"id": 1,
 		"name": "JP Morgan",
 		"data": {
+			"2016": {
+				"CSE": 3
+			},
 			"2017": {
 				"CSE": 7,
 				"salary": "7lpa"
+			},
+			"2018": {
+				"CSE": 5,
+				"ECE": 1
 			}
 		}
 	},
@@ -23,6 +30,10 @@
 		"id": 3,
 		"name": "ITC",
 		"data": {
+			"2016": {
+				"EEE": 2,
+				"MECH": 4
+			},
 			"2017": {
 				"MECH": 1,
 				"salary": "8.05lpa"
@@ -36,6 +47,13 @@
 			"2017": {
 				"CSE": 9,
 				"salary": "7lpa"
+			},
+			"2018": {
+				"CIVIL": 0,
+				"CSE": 1,
+				"ECE": 3,
+				"EEE": 2,
+				"MECH": 1
 			}
 		}
 	},
@@ -43,6 +61,9 @@
 		"id": 5,
 		"name": "CA Technologies",
 		"data": {
+			"2016": {
+				"CSE": 5
+			},
 			"2017": {
 				"CSE": 2,
 				"salary": "7lpa"
@@ -53,9 +74,15 @@
 		"id": 6,
 		"name": "Maruti Suzuki",
 		"data": {
+			"2016": {
+				"MECH": 4
+			},
 			"2017": {
 				"MECH": 7,
 				"salary": "6.5lpa"
+			},
+			"2018": {
+				"MECH": 3
 			}
 		}
 	},
@@ -74,10 +101,21 @@
 		"id": 8,
 		"name": "Wipro Limited",
 		"data": {
+			"2016": {
+				"CSE": 11,
+				"ECE": 7,
+				"EEE": 5
+			},
 			"2017": {
 				"CSE": 8,
 				"ECE": 2,
 				"salary": "5lpa"
+			},
+			"2018": {
+				"BME": 2,
+				"CSE": 4,
+				"ECE": 2,
+				"MECH": 2
 			}
 		}
 	},
@@ -85,6 +123,14 @@
 		"id": 9,
 		"name": "Infosys",
 		"data": {
+			"2016": {
+				"BME": 2,
+				"CIVIL": 6,
+				"CSE": 13,
+				"ECE": 13,
+				"EEE": 12,
+				"MECH": 4
+			},
 			"2017": {
 				"CSE": 16,
 				"BME": 7,
@@ -93,6 +139,14 @@
 				"EEE": 14,
 				"MECH": 15,
 				"salary": "3.25lpa"
+			},
+			"2018": {
+				"BME": 10,
+				"CIVIL": 12,
+				"CSE": 12,
+				"ECE": 7,
+				"EEE": 19,
+				"MECH": 12
 			}
 		}
 	},
@@ -100,6 +154,14 @@
 		"id": 10,
 		"name": "Accenture",
 		"data": {
+			"2016": {
+				"BME": 15,
+				"CIVIL": 26,
+				"CSE": 37,
+				"ECE": 41,
+				"EEE": 31,
+				"MECH": 32
+			},
 			"2017": {
 				"BME": 9,
 				"CIVIL": 17,
@@ -108,6 +170,11 @@
 				"MECH": 20,
 				"CSE": 19,
 				"salary": "3lpa"
+			},
+			"2018": {
+				"CSE": 12,
+				"ECE": 9,
+				"EEE": 24
 			}
 		}
 	},
@@ -115,6 +182,11 @@
 		"id": 11,
 		"name": "CapGemini",
 		"data": {
+			"2016": {
+				"CSE": 1,
+				"ECE": 0,
+				"EEE": 0
+			},
 			"2017": {
 				"BME": 1,
 				"CIVIL": 1,
@@ -123,6 +195,14 @@
 				"MECH": 4,
 				"CSE": 7,
 				"salary": "3lpa"
+			},
+			"2018": {
+				"BME": 6,
+				"CIVIL": 9,
+				"CSE": 8,
+				"ECE": 4,
+				"EEE": 7,
+				"MECH": 4
 			}
 		}
 	},
@@ -133,6 +213,11 @@
 			"2017": {
 				"CSE": 2,
 				"salary": "6lpa"
+			},
+			"2018": {
+				"CSE": 5,
+				"ECE": 2,
+				"EEE": 1
 			}
 		}
 	},
@@ -140,10 +225,18 @@
 		"id": 13,
 		"name": "NCR",
 		"data": {
+			"2016": {
+				"CSE": 5,
+				"ECE": 10
+			},
 			"2017": {
 				"CSE": 2,
 				"ECE": 1,
 				"salary": "6lpa"
+			},
+			"2018": {
+				"CSE": 6,
+				"ECE": 1
 			}
 		}
 	},
@@ -151,9 +244,16 @@
 		"id": 14,
 		"name": "L & T",
 		"data": {
+			"2016": {
+				"CIVIL": 6,
+				"ECE": 0,
+				"EEE": 8,
+				"MECH": 6
+			},
 			"2017": {
 				"CIVIL": 14,
 				"EEE": 2,
+				"MECH": 0,
 				"salary": "5lpa"
 			}
 		}
@@ -162,9 +262,15 @@
 		"id": 15,
 		"name": "Service Now",
 		"data": {
+			"2016": {
+				"CSE": 2
+			},
 			"2017": {
 				"CSE": 2,
 				"salary": "10lpa"
+			},
+			"2018": {
+				"CSE": 1
 			}
 		}
 	},
@@ -176,6 +282,10 @@
 				"CSE": 2,
 				"ECE": 9,
 				"salary": "5lpa"
+			},
+			"2018": {
+				"CSE": 1,
+				"ECE": 2
 			}
 		}
 	},
@@ -194,6 +304,10 @@
 		"id": 18,
 		"name": "Arcserve",
 		"data": {
+			"2016": {
+				"CSE": 0,
+				"ECE": 1
+			},
 			"2017": {
 				"CSE": 1,
 				"salary": "3lpa"
@@ -214,6 +328,9 @@
 		"id": 20,
 		"name": "Cyient",
 		"data": {
+			"2016": {
+				"MECH": 2
+			},
 			"2017": {
 				"MECH": 6,
 				"salary": "3.25lpa"
@@ -235,6 +352,9 @@
 		"id": 22,
 		"name": "Satyam Ventures",
 		"data": {
+			"2016": {
+				"MECH": 2
+			},
 			"2017": {
 				"MECH": 2,
 				"salary": "3lpa"
@@ -245,6 +365,11 @@
 		"id": 23,
 		"name": "Tata Projects",
 		"data": {
+			"2016": {
+				"CIVIL": 4,
+				"EEE": 1,
+				"MECH": 1
+			},
 			"2017": {
 				"CIVIL": 7,
 				"EEE": 2,
@@ -257,11 +382,21 @@
 		"id": 24,
 		"name": "Oracle",
 		"data": {
+			"2016": {
+				"CSE": 4,
+				"ECE": 0,
+				"EEE": 0
+			},
 			"2017": {
 				"CSE": 6,
 				"ECE": 4,
 				"EEE": 1,
 				"salary": "9.5lpa"
+			},
+			"2018": {
+				"CSE": 5,
+				"ECE": 2,
+				"EEE": 1
 			}
 		}
 	},
@@ -298,8 +433,11 @@
 	},
 	{
 		"id": 28,
-		"name": "Aurobindo",
+		"name": "Aurobindo Pharma",
 		"data": {
+			"2016": {
+				"MECH": 4
+			},
 			"2017": {
 				"MECH": 2,
 				"salary": "3.5lpa"
@@ -314,6 +452,327 @@
 				"CSE": 2,
 				"ECE": 1,
 				"salary": "5lpa"
+			}
+		}
+	},
+	{
+		"id": 30,
+		"name": "Cavium Networks",
+		"data": {
+			"2016": {
+				"BME": 0,
+				"CIVIL": 0,
+				"CSE": 1,
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 0
+			},
+			"2017": {
+				"CSE": 0,
+				"ECE": 0,
+				"BME": 0,
+				"CIVIL": 0,
+				"EEE": 0,
+				"MECH": 0,
+				"salary": "7lpa"
+			}
+		}
+	},
+	{
+		"id": 31,
+		"name": "Philips",
+		"data": {
+			"2017": {
+				"CSE": 0,
+				"salary": "3lpa"
+			}
+		}
+	},
+	{
+		"id": 32,
+		"name": "Finisar",
+		"data": {
+			"2017": {
+				"MECH": 0,
+				"salary": "3.5lpa"
+			}
+		}
+	},
+	{
+		"id": 33,
+		"name": "Medha Servo Drives",
+		"data": {
+			"2016": {
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 0
+			},
+			"2017": {
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 0,
+				"salary": "2.75lpa"
+			},
+			"2018": {
+				"ECE": 1
+			}
+		}
+	},
+	{
+		"id": 34,
+		"name": "Zoho Corporation",
+		"data": {
+			"2016": {
+				"BME": 0,
+				"CIVIL": 0,
+				"CSE": 2,
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 0
+			},
+			"2017": {
+				"BME": 0,
+				"CIVIL": 0,
+				"CSE": 0,
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 0,
+				"salary": "6.5lpa"
+			}
+		}
+	},
+	{
+		"id": 35,
+		"name": "Raam Group",
+		"data": {
+			"2016": {
+				"MECH": 1
+			},
+			"2017": {
+				"CSE": 0,
+				"ECE": 0,
+				"EEE": 0,
+				"BME": 0,
+				"CIVIL": 0,
+				"MECH": 0,
+				"salary": "4.5lpa"
+			}
+		}
+	},
+	{
+		"id": 36,
+		"name": "NetCracker",
+		"data": {
+			"2016": {
+				"CSE": 1,
+				"ECE": 0,
+				"EEE": 0
+			},
+			"2017": {
+				"CSE": 0,
+				"CIVIL": 0,
+				"ECE": 0,
+				"salary": "5.5lpa"
+			}
+		}
+	},
+	{
+		"id": 37,
+		"name": "Sabre",
+		"data": {
+			"2018": {
+				"CSE": 4,
+				"ECE": 0,
+				"EEE": 0,
+				"salary": "14lpa"
+			}
+		}
+	},
+	{
+		"id": 38,
+		"name": "DeltaX",
+		"data": {
+			"2018": {
+				"CSE": 0,
+				"ECE": 0,
+				"EEE": 0
+			}
+		}
+	},
+	{
+		"id": 39,
+		"name": "TCS",
+		"data": {
+			"2018": {
+				"BME": 2,
+				"CIVIL": 3,
+				"CSE": 6,
+				"ECE": 3,
+				"EEE": 6,
+				"MECH": 5
+			}
+		}
+	},
+	{
+		"id": 40,
+		"name": "Byju's",
+		"data": {
+			"2018": {
+				"CSE": 1
+			}
+		}
+	},
+	{
+		"id": 41,
+		"name": "GE Appliance",
+		"data": {
+			"2018": {
+				"CSE": 0
+			}
+		}
+	},
+	{
+		"id": 42,
+		"name": "Merylitics",
+		"data": {
+			"2018": {
+				"CIVIL": 0,
+				"CSE": 0,
+				"ECE": 0,
+				"EEE": 0,
+				"MECH": 2
+			}
+		}
+	},
+	{
+		"id": 43,
+		"name": "Tehcnip FMC",
+		"data": {
+			"2018": {
+				"MECH": 3
+			}
+		}
+	},
+	{
+		"id": 44,
+		"name": "IBM",
+		"data": {
+			"2018": {
+				"CSE": 0
+			}
+		}
+	},
+	{
+		"id": 45,
+		"name": "ION",
+		"data": {
+			"2016": {
+				"CSE": 1
+			}
+		}
+	},
+	{
+		"id": 46,
+		"name": "Tech Mahindra",
+		"data": {
+			"2016": {
+				"CSE": 1,
+				"ECE": 0,
+				"EEE": 3,
+				"MECH": 3
+			}
+		}
+	},
+	{
+		"id": 47,
+		"name": "U U R M I",
+		"data": {
+			"2016": {
+				"CSE": 1,
+				"ECE": 2
+			}
+		}
+	},
+	{
+		"id": 48,
+		"name": "Shoretel",
+		"data": {
+			"2016": {
+				"CSE": 4,
+				"ECE": 1
+			}
+		}
+	},
+	{
+		"id": 49,
+		"name": "CK Birla",
+		"data": {
+			"2016": {
+				"MECH": 3
+			}
+		}
+	},
+	{
+		"id": 50,
+		"name": "SalesForce",
+		"data": {
+			"2016": {
+				"CSE": 1
+			}
+		}
+	},
+	{
+		"id": 51,
+		"name": "Atlas Corp",
+		"data": {
+			"2016": {
+				"MECH": 0
+			}
+		}
+	},
+	{
+		"id": 52,
+		"name": "Hexagon India",
+		"data": {
+			"2016": {
+				"CSE": 2
+			}
+		}
+	},
+	{
+		"id": 53,
+		"name": "Mars International",
+		"data": {
+			"2016": {
+				"MECH": 1
+			}
+		}
+	},
+	{
+		"id": 54,
+		"name": "Schneider Electric",
+		"data": {
+			"2016": {
+				"MECH": 0
+			}
+		}
+	},
+	{
+		"id": 55,
+		"name": "K & S Partners",
+		"data": {
+			"2016": {
+				"CSE": 1,
+				"MECH": 0
+			}
+		}
+	},
+	{
+		"id": 56,
+		"name": "Balco",
+		"data": {
+			"2016": {
+				"EEE": 7
 			}
 		}
 	}

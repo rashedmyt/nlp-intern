@@ -157,12 +157,147 @@
         },
         {
             "id": 28,
-            "cname": "Aurobindo",
+            "cname": "Aurobindo Pharma",
             "whitelist": []
         },
         {
             "id": 29,
             "cname": "Infor",
+            "whitelist": []
+        },
+        {
+            "id": 30,
+            "cname": "Cavium Networks",
+            "whitelist": []
+        },
+        {
+            "id": 31,
+            "cname": "Philips",
+            "whitelist": []
+        },
+        {
+            "id": 32,
+            "cname": "Finisar",
+            "whitelist": []
+        },
+        {
+            "id": 33,
+            "cname": "Medha Servo Drives",
+            "whitelist": []
+        },
+        {
+            "id": 34,
+            "cname": "Zoho Corporation",
+            "whitelist": []
+        },
+        {
+            "id": 35,
+            "cname": "Raam Group",
+            "whitelist": []
+        },
+        {
+            "id": 36,
+            "cname": "NetCracker",
+            "whitelist": []
+        },
+        {
+            "id": 37,
+            "cname": "Sabre",
+            "whitelist": []
+        },
+        {
+            "id": 38,
+            "cname": "DeltaX",
+            "whitelist": []
+        },
+        {
+            "id": 39,
+            "cname": "TCS",
+            "whitelist": []
+        },
+        {
+            "id": 40,
+            "cname": "Byju's",
+            "whitelist": []
+        },
+        {
+            "id": 41,
+            "cname": "GE Appliance",
+            "whitelist": []
+        },
+        {
+            "id": 42,
+            "cname": "Merylitics",
+            "whitelist": []
+        },
+        {
+            "id": 43,
+            "cname": "Technip FMC",
+            "whitelist": []
+        },
+        {
+            "id": 44,
+            "cname": "IBM",
+            "whitelist": []
+        },
+        {
+            "id": 45,
+            "cname": "ION",
+            "whitelist": []
+        },
+        {
+            "id": 46,
+            "cname": "Tech Mahindra",
+            "whitelist": []
+        },
+        {
+            "id": 47,
+            "cname": "U U R M I",
+            "whitelist": []
+        },
+        {
+            "id": 48,
+            "cname": "Shoretel",
+            "whitelist": []
+        },
+        {
+            "id": 49,
+            "cname": "CK Birla",
+            "whitelist": []
+        },
+        {
+            "id": 50,
+            "cname": "SalesForce",
+            "whitelist": []
+        },
+        {
+            "id": 51,
+            "cname": "Atlas Corp",
+            "whitelist": []
+        },
+        {
+            "id": 52,
+            "cname": "Hexagon India",
+            "whitelist": []
+        },
+        {
+            "id": 53,
+            "cname": "Mars International",
+            "whitelist": []
+        },
+        {
+            "id": 54,
+            "cname": "Schneider Electric",
+            "whitelist": []
+        },
+        {
+            "id": 55,
+            "cname": "K & S Partners",
+            "whitelist": []
+        },
+        {
+            "id": 56,
+            "cname": "Balco",
             "whitelist": []
         }
     ]
