@@ -78,10 +78,13 @@ def handle_salary(company_name, year, responder):
         responder.frame['year'] = year
 
     if year in company['data']:
-        salary = company['data'][year]['salary']
-        reply = "%s gave a salary of %s in the year %s" % (
-            company_name, salary, year)
-        responder.reply(reply)
+        try:
+            salary = company['data'][year]['salary']
+            reply = "%s gave a salary of %s in the year %s" % (
+                company_name, salary, year)
+            responder.reply(reply)
+        except KeyError:
+            responder.reply("Data Not available")
     elif year:
         reply = company_name + " didn't came for placements in " + year
         responder.reply(reply)
