@@ -8,7 +8,7 @@
 			},
 			"2017": {
 				"CSE": 7,
-				"salary": "7lpa"
+				"salary": 7
 			},
 			"2018": {
 				"CSE": 5,
@@ -22,7 +22,7 @@
 		"data": {
 			"2017": {
 				"CSE": 2,
-				"salary": "29.3lpa"
+				"salary": 29.3
 			}
 		}
 	},
@@ -36,7 +36,7 @@
 			},
 			"2017": {
 				"MECH": 1,
-				"salary": "8.05lpa"
+				"salary": 8.05
 			}
 		}
 	},
@@ -46,7 +46,7 @@
 		"data": {
 			"2017": {
 				"CSE": 9,
-				"salary": "7lpa"
+				"salary": 7
 			},
 			"2018": {
 				"CIVIL": 0,
@@ -66,7 +66,7 @@
 			},
 			"2017": {
 				"CSE": 2,
-				"salary": "7lpa"
+				"salary": 7
 			}
 		}
 	},
@@ -79,7 +79,7 @@
 			},
 			"2017": {
 				"MECH": 7,
-				"salary": "6.5lpa"
+				"salary": 6.5
 			},
 			"2018": {
 				"MECH": 3
@@ -93,7 +93,7 @@
 			"2017": {
 				"CSE": 3,
 				"ECE": 6,
-				"salary": "6.5lpa"
+				"salary": 6.5
 			}
 		}
 	},
@@ -109,7 +109,7 @@
 			"2017": {
 				"CSE": 8,
 				"ECE": 2,
-				"salary": "5lpa"
+				"salary": 5
 			},
 			"2018": {
 				"BME": 2,
@@ -138,7 +138,7 @@
 				"ECE": 19,
 				"EEE": 14,
 				"MECH": 15,
-				"salary": "3.25lpa"
+				"salary": 3.25
 			},
 			"2018": {
 				"BME": 10,
@@ -169,7 +169,7 @@
 				"EEE": 27,
 				"MECH": 20,
 				"CSE": 19,
-				"salary": "3lpa"
+				"salary": 3
 			},
 			"2018": {
 				"CSE": 12,
@@ -194,7 +194,7 @@
 				"EEE": 2,
 				"MECH": 4,
 				"CSE": 7,
-				"salary": "3lpa"
+				"salary": 3
 			},
 			"2018": {
 				"BME": 6,
@@ -212,7 +212,7 @@
 		"data": {
 			"2017": {
 				"CSE": 2,
-				"salary": "6lpa"
+				"salary": 6
 			},
 			"2018": {
 				"CSE": 5,
@@ -232,7 +232,7 @@
 			"2017": {
 				"CSE": 2,
 				"ECE": 1,
-				"salary": "6lpa"
+				"salary": 6
 			},
 			"2018": {
 				"CSE": 6,
@@ -254,7 +254,7 @@
 				"CIVIL": 14,
 				"EEE": 2,
 				"MECH": 0,
-				"salary": "5lpa"
+				"salary": 5
 			}
 		}
 	},
@@ -267,7 +267,7 @@
 			},
 			"2017": {
 				"CSE": 2,
-				"salary": "10lpa"
+				"salary": 10
 			},
 			"2018": {
 				"CSE": 1
@@ -281,7 +281,7 @@
 			"2017": {
 				"CSE": 2,
 				"ECE": 9,
-				"salary": "5lpa"
+				"salary": 5
 			},
 			"2018": {
 				"CSE": 1,
@@ -296,7 +296,7 @@
 			"2017": {
 				"EEE": 1,
 				"MECH": 2,
-				"salary": "6lpa"
+				"salary": 6
 			}
 		}
 	},
@@ -310,7 +310,7 @@
 			},
 			"2017": {
 				"CSE": 1,
-				"salary": "3lpa"
+				"salary": 3
 			}
 		}
 	},
@@ -320,7 +320,7 @@
 		"data": {
 			"2017": {
 				"CSE": 1,
-				"salary": "3.5lpa"
+				"salary": 3.5
 			}
 		}
 	},
@@ -333,7 +333,7 @@
 			},
 			"2017": {
 				"MECH": 6,
-				"salary": "3.25lpa"
+				"salary": 3.25
 			}
 		}
 	},
@@ -344,7 +344,7 @@
 			"2017": {
 				"ECE": 1,
 				"MECH": 1,
-				"salary": "3lpa"
+				"salary": 3
 			}
 		}
 	},
@@ -357,7 +357,7 @@
 			},
 			"2017": {
 				"MECH": 2,
-				"salary": "3lpa"
+				"salary": 3
 			}
 		}
 	},
@@ -374,7 +374,7 @@
 				"CIVIL": 7,
 				"EEE": 2,
 				"MECH": 3,
-				"salary": "3.75lpa"
+				"salary": 3.75
 			}
 		}
 	},
@@ -391,7 +391,7 @@
 				"CSE": 6,
 				"ECE": 4,
 				"EEE": 1,
-				"salary": "9.5lpa"
+				"salary": 9.5
 			},
 			"2018": {
 				"CSE": 5,
@@ -406,7 +406,7 @@
 		"data": {
 			"2017": {
 				"ECE": 2,
-				"salary": "3.5lpa"
+				"salary": 3.5
 			}
 		}
 	},
@@ -416,7 +416,7 @@
 		"data": {
 			"2017": {
 				"MECH": 2,
-				"salary": "3.5lpa"
+				"salary": 3.5
 			}
 		}
 	},
@@ -427,7 +427,7 @@
 			"2017": {
 				"CSE": 1,
 				"ECE": 1,
-				"salary": "4lpa"
+				"salary": 4
 			}
 		}
 	},
@@ -440,7 +440,7 @@
 			},
 			"2017": {
 				"MECH": 2,
-				"salary": "3.5lpa"
+				"salary": 3.5
 			}
 		}
 	},
@@ -451,7 +451,7 @@
 			"2017": {
 				"CSE": 2,
 				"ECE": 1,
-				"salary": "5lpa"
+				"salary": 5
 			}
 		}
 	},
@@ -474,7 +474,7 @@
 				"CIVIL": 0,
 				"EEE": 0,
 				"MECH": 0,
-				"salary": "7lpa"
+				"salary": 7
 			}
 		}
 	},
@@ -484,7 +484,7 @@
 		"data": {
 			"2017": {
 				"CSE": 0,
-				"salary": "3lpa"
+				"salary": 3
 			}
 		}
 	},
@@ -494,7 +494,7 @@
 		"data": {
 			"2017": {
 				"MECH": 0,
-				"salary": "3.5lpa"
+				"salary": 3.5
 			}
 		}
 	},
@@ -511,7 +511,7 @@
 				"ECE": 0,
 				"EEE": 0,
 				"MECH": 0,
-				"salary": "2.75lpa"
+				"salary": 2.75
 			},
 			"2018": {
 				"ECE": 1
@@ -537,7 +537,7 @@
 				"ECE": 0,
 				"EEE": 0,
 				"MECH": 0,
-				"salary": "6.5lpa"
+				"salary": 6.5
 			}
 		}
 	},
@@ -555,7 +555,7 @@
 				"BME": 0,
 				"CIVIL": 0,
 				"MECH": 0,
-				"salary": "4.5lpa"
+				"salary": 4.5
 			}
 		}
 	},
@@ -572,7 +572,7 @@
 				"CSE": 0,
 				"CIVIL": 0,
 				"ECE": 0,
-				"salary": "5.5lpa"
+				"salary": 5.5
 			}
 		}
 	},
@@ -583,8 +583,7 @@
 			"2018": {
 				"CSE": 4,
 				"ECE": 0,
-				"EEE": 0,
-				"salary": "14lpa"
+				"EEE": 0
 			}
 		}
 	},
