@@ -1,0 +1,25 @@
+show all companies
+list all companies
+show more companies
+list more companies
+more companies
+show all companies in {2015|sys_time}
+list all companies in {2015|sys_time}
+show more companies in {2015|sys_time}
+list more companies in {2015|sys_time}
+more companies in {2015|sys_time}
+show all companies from {2015|sys_time}
+list all companies from {2015|sys_time}
+show more companies from {2015|sys_time}
+list more companies from {2015|sys_time}
+more companies from {2015|sys_time}
+show all companies which came {last year|sys_time}
+list all companies which came {last year|sys_time}
+show more companies which came {last_year|sys_time}
+list more companies which came {last_year|sys_time}
+more companies which came {last_year|sys_time}
+show all companies from {last year|sys_time}
+list all companies from {last year|sys_time}
+show more companies from {last year|sys_time}
+list more companies from {last year|sys_time}
+more companies from {last year|sys_time}

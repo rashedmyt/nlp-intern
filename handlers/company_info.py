@@ -23,7 +23,7 @@ def company_last_year(request, responder):
 
 @app.handle(intent='salary')
 def company_salary(request, responder):
-    create_feedback_file('company_name', request)
+    create_feedback_file('company_info', request)
     company_name = request.frame.get('company_name')
     year = request.frame.get('year')
 
@@ -49,9 +49,10 @@ def company_salary(request, responder):
             "Sure, which company's salary would you like to know?")
         responder.listen()
 
+
 @app.handle(intent='total_recruits')
 def company_total_recruits(request, responder):
-    create_feedback_file('company_name', request)
+    create_feedback_file('company_info', request)
     company_name = request.frame.get('company_name')
     dept_name = request.frame.get('dept_name')
     year = request.frame.get('year')

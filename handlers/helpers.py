@@ -55,7 +55,40 @@ def specify_year(request, responder):
             "Not sure which company you meant there. Can you please try again?")
 
 
+# Extractors
+
+
+def extract_year(request):
+    year = None
+    year = next((i['value'][0]['value'][0:4]
+                 for i in request.entities if i['type'] == 'sys_time'), year)
+
+    return year
+
+
 # Helpers
+
+
+def handle_companies_list(category, year, responder):
+    companies = qa.get(index='companies', size=100)
+    if year == None:
+        company_names = [i['name'] for i in companies]
+    else:
+        company_names = [i['name']
+                         for i in companies if year in i['data']]
+
+    if len(company_names) == 0:
+        reply = "Data unavailable"
+    else:
+        reply = "The companies which came for placements"
+        if year != None:
+            reply += " in " + year
+        if category == "all" or len(company_names) < 6:
+            reply += " are\n" + "\n".join(company_names)
+        elif len(company_names) > 5:
+            reply += " are\n" + "\n".join(company_names[:5])
+            reply += "\nand %s more...." % (len(company_names)-5)
+    responder.reply(reply)
 
 
 def handle_last_recruitment(company_name, responder):
@@ -80,7 +113,7 @@ def handle_salary(company_name, year, responder):
     if year in company['data']:
         try:
             salary = company['data'][year]['salary']
-            reply = "%s gave a salary of %s in the year %s" % (
+            reply = "%s gave a salary of %s lpa in the year %s" % (
                 company_name, salary, year)
             responder.reply(reply)
         except KeyError:
@@ -112,7 +145,8 @@ def handle_total_recruits(company_name, year, category, responder):
             try:
                 recruits = company['data'][year][category]
             except KeyError:
-                reply = "%s didn't recruit for %s dept in %s" %(company_name, category, year)
+                reply = "%s didn't recruit for %s dept in %s" % (
+                    company_name, category, year)
                 responder.reply(reply)
                 return
         reply = "%s recruited total of %s students " % (
