@@ -1,0 +1,27 @@
+how many companies came
+how many companies came for placements
+how many companies came {last year|sys_time}
+how many companies came for placements {last year|sys_time}
+how many companies came in {2015|sys_time}
+how many companies came for placements in {2015|sys_time}
+how many companies visited
+how many companies visited for placements
+how many companies visited {last year|sys_time}
+how many companies visited for placements {last year|sys_time}
+how many companies visited in {2015|sys_time}
+how many companies visited for placements in {2015|sys_time}
+how many companies visited college
+how many companies visited college for placements
+how many companies visited college {last year|sys_time}
+how many companies visited college for placements {last year|sys_time}
+how many companies visited college in {2015|sys_time}
+how many companies visited college for placements in {2015|sys_time}
+companies count
+companies count in {2015|sys_time}
+companies count {last year|sys_time}
+what is the companies count
+what is the companies count in {2015|sys_time}
+what is the companies count {last year|sys_time}
+how many companies recruited from {cse|dept_name}
+how many comapnies recruited from {cse|dept_name} {last year|sys_time}
+how many companies recruited from {cse|dept_name} in {2015|sys_time}

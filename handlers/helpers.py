@@ -58,12 +58,20 @@ def specify_year(request, responder):
 # Extractors
 
 
-def extract_year(request):
-    year = None
-    year = next((i['value'][0]['value'][0:4]
-                 for i in request.entities if i['type'] == 'sys_time'), year)
+def extract_entities(request):
+    company_name = request.frame.get('company_name')
+    dept_name = request.frame.get('dept_name')
+    year = request.frame.get('year')
 
-    return year
+    for i in request.entities:
+        if i['type'] == 'company_name':
+            company_name = i['value'][0]['cname']
+        elif i['type'] == 'dept_name':
+            dept_name = i['value'][0]['cname']
+        elif i['type'] == 'sys_time':
+            year = i['value'][0]['value'][0:4]
+
+    return year, company_name, dept_name
 
 
 # Helpers
@@ -76,6 +84,11 @@ def handle_companies_list(category, year, responder):
     else:
         company_names = [i['name']
                          for i in companies if year in i['data']]
+
+    if year != None and category == "some":
+        responder.frame['year'] = year
+    elif category == "all":
+        responder.frame.pop('year', None)
 
     if len(company_names) == 0:
         reply = "Data unavailable"

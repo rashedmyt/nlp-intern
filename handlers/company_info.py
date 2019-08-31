@@ -1,15 +1,12 @@
 from nlp_intern.root import app, qa
-from .helpers import handle_salary, handle_last_recruitment, handle_total_recruits
+from .helpers import handle_salary, handle_last_recruitment, handle_total_recruits, extract_entities
 from nlp_intern.logger import create_feedback_file
 
 
 @app.handle(intent='last_recruitment')
 def company_last_year(request, responder):
     create_feedback_file('company_info', request)
-    company_name = request.frame.get('company_name')
-
-    company_name = next((e['value'][0]['cname']
-                         for e in request.entities if e['type'] == 'company_name'), company_name)
+    _, company_name, _ = extract_entities(request)
 
     responder.frame['desired_action'] = "last_recruitment"
 
@@ -24,14 +21,7 @@ def company_last_year(request, responder):
 @app.handle(intent='salary')
 def company_salary(request, responder):
     create_feedback_file('company_info', request)
-    company_name = request.frame.get('company_name')
-    year = request.frame.get('year')
-
-    for i in request.entities:
-        if i['type'] == 'company_name':
-            company_name = i['value'][0]['cname']
-        elif i['type'] == 'sys_time':
-            year = i['value'][0]['value'][0:4]
+    year, company_name, _ = extract_entities(request)
 
     responder.frame['desired_action'] = 'salary'
 
@@ -53,17 +43,7 @@ def company_salary(request, responder):
 @app.handle(intent='total_recruits')
 def company_total_recruits(request, responder):
     create_feedback_file('company_info', request)
-    company_name = request.frame.get('company_name')
-    dept_name = request.frame.get('dept_name')
-    year = request.frame.get('year')
-
-    for i in request.entities:
-        if i['type'] == 'company_name':
-            company_name = i['value'][0]['cname']
-        elif i['type'] == 'dept_name':
-            dept_name = i['value'][0]['cname']
-        elif i['type'] == 'sys_time':
-            year = i['value'][0]['value'][0:4]
+    year, company_name, dept_name = extract_entities(request)
 
     responder.frame['desired_action'] = 'total_recruits'
 
