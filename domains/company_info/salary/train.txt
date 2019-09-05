@@ -1,6 +1,5 @@
 What is the salary given
 salary given
-salary
 What is the salary given by {oracle|company_name}
 salary given by {oracle|company_name}
 salary by {oracle|company_name}
@@ -16,3 +15,4 @@ salary in {2015|sys_time}
 What is the salary given {last year|sys_time}
 salary given {last year|sys_time}
 salary {last year|sys_time}
+{oracle|company_name} salary

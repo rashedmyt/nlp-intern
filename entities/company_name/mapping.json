@@ -3,44 +3,70 @@
         {
             "id": 1,
             "cname": "JP Morgan",
-            "whitelist": []
+            "whitelist": [
+                "jpmorgan",
+                "jp morgan"
+            ]
         },
         {
             "id": 2,
             "cname": "DE Shaw",
-            "whitelist": []
+            "whitelist": [
+                "deshaw",
+                "de shaw"
+            ]
         },
         {
             "id": 3,
             "cname": "ITC",
-            "whitelist": []
+            "whitelist": [
+                "itc",
+                "I T C"
+            ]
         },
         {
             "id": 4,
             "cname": "Wellsfargo",
-            "whitelist": []
+            "whitelist": [
+                "wellsfargo"
+            ]
         },
         {
             "id": 5,
             "cname": "CA Technologies",
-            "whitelist": []
+            "whitelist": [
+                "catechnologies",
+                "ca technologies",
+                "cat acknowledgement"
+            ]
         },
         {
             "id": 6,
             "cname": "Maruti Suzuki",
-            "whitelist": []
+            "whitelist": [
+                "marutisuzuki",
+                "maruti suzuki",
+                "maruti",
+                "suzuki"
+            ]
         },
         {
             "id": 7,
             "cname": "Pega Systems",
-            "whitelist": []
+            "whitelist": [
+                "pega",
+                "pegasystems",
+                "pega systems"
+            ]
         },
         {
             "id": 8,
             "cname": "Wipro Limited",
             "whitelist": [
                 "wipro",
-                "wipr"
+                "wipr",
+                "wepro",
+                "wipro ltd"
             ]
         },
         {
@@ -60,7 +86,10 @@
         {
             "id": 11,
             "cname": "CapGemini",
-            "whitelist": []
+            "whitelist": [
+                "capgemini",
+                "cap gemini"
+            ]
         },
         {
             "id": 12,
@@ -79,12 +108,17 @@
         {
             "id": 14,
             "cname": "L & T",
-            "whitelist": []
+            "whitelist": [
+                "l&t",
+                "l & t",
+                "lnt"
+            ]
         },
         {
             "id": 15,
             "cname": "Service Now",
             "whitelist": [
+                "servicenow",
                 "service now",
                 "service"
             ]
@@ -93,43 +127,62 @@
             "id": 16,
             "cname": "Mathworks",
             "whitelist": [
-                "mathworks"
+                "mathworks",
+                "math works"
             ]
         },
         {
             "id": 17,
             "cname": "ITD",
-            "whitelist": []
+            "whitelist": [
+                "itd"
+            ]
         },
         {
             "id": 18,
             "cname": "Arcserve",
-            "whitelist": []
+            "whitelist": [
+                "arcserve"
+            ]
         },
         {
             "id": 19,
             "cname": "ADP",
-            "whitelist": []
+            "whitelist": [
+                "adp"
+            ]
         },
         {
             "id": 20,
             "cname": "Cyient",
-            "whitelist": []
+            "whitelist": [
+                "cyient"
+            ]
         },
         {
             "id": 21,
             "cname": "Fiat",
-            "whitelist": []
+            "whitelist": [
+                "fiat"
+            ]
         },
         {
             "id": 22,
             "cname": "Satyam Ventures",
-            "whitelist": []
+            "whitelist": [
+                "satyam",
+                "satyamventures",
+                "satyam ventures"
+            ]
         },
         {
             "id": 23,
             "cname": "Tata Projects",
-            "whitelist": []
+            "whitelist": [
+                "tataprojects",
+                "tata projects",
+                "tata"
+            ]
         },
         {
             "id": 24,
@@ -143,162 +196,255 @@
         {
             "id": 25,
             "cname": "ICS",
-            "whitelist": []
+            "whitelist": [
+                "ics"
+            ]
         },
         {
             "id": 26,
             "cname": "Fintech",
-            "whitelist": []
+            "whitelist": [
+                "fintech"
+            ]
         },
         {
             "id": 27,
             "cname": "Dolcera",
-            "whitelist": []
+            "whitelist": [
+                "dolcera"
+            ]
         },
         {
             "id": 28,
             "cname": "Aurobindo Pharma",
-            "whitelist": []
+            "whitelist": [
+                "aurobindopharma",
+                "aurobindo pharma",
+                "aurobindo"
+            ]
         },
         {
             "id": 29,
             "cname": "Infor",
-            "whitelist": []
+            "whitelist": [
+                "infor"
+            ]
         },
         {
             "id": 30,
             "cname": "Cavium Networks",
-            "whitelist": []
+            "whitelist": [
+                "caviumnetworks",
+                "cavium networks",
+                "cavium"
+            ]
         },
         {
             "id": 31,
             "cname": "Philips",
-            "whitelist": []
+            "whitelist": [
+                "philips"
+            ]
         },
         {
             "id": 32,
             "cname": "Finisar",
-            "whitelist": []
+            "whitelist": [
+                "finisar"
+            ]
         },
         {
             "id": 33,
             "cname": "Medha Servo Drives",
-            "whitelist": []
+            "whitelist": [
+                "medha",
+                "medha servo drives",
+                "medha drives"
+            ]
         },
         {
             "id": 34,
             "cname": "Zoho Corporation",
-            "whitelist": []
+            "whitelist": [
+                "zoho",
+                "zoho corporation"
+            ]
         },
         {
             "id": 35,
             "cname": "Raam Group",
-            "whitelist": []
+            "whitelist": [
+                "raam",
+                "raam group"
+            ]
         },
         {
             "id": 36,
             "cname": "NetCracker",
-            "whitelist": []
+            "whitelist": [
+                "netcracker",
+                "net cracker"
+            ]
         },
         {
             "id": 37,
             "cname": "Sabre",
-            "whitelist": []
+            "whitelist": [
+                "sabre",
+                "sabre ltd",
+                "sabre corporation"
+            ]
         },
         {
             "id": 38,
             "cname": "DeltaX",
-            "whitelist": []
+            "whitelist": [
+                "deltax",
+                "delta x"
+            ]
         },
         {
             "id": 39,
             "cname": "TCS",
-            "whitelist": []
+            "whitelist": [
+                "tcs"
+            ]
         },
         {
             "id": 40,
             "cname": "Byju's",
-            "whitelist": []
+            "whitelist": [
+                "byjus",
+                "byju's"
+            ]
         },
         {
             "id": 41,
             "cname": "GE Appliance",
-            "whitelist": []
+            "whitelist": [
+                "geappliance",
+                "ge appliance"
+            ]
         },
         {
             "id": 42,
             "cname": "Merylitics",
-            "whitelist": []
+            "whitelist": [
+                "merylitics",
+                "merilitics",
+                "merilytics"
+            ]
         },
         {
             "id": 43,
             "cname": "Technip FMC",
-            "whitelist": []
+            "whitelist": [
+                "technipfmc",
+                "technip fmc",
+                "fmc"
+            ]
         },
         {
             "id": 44,
             "cname": "IBM",
-            "whitelist": []
+            "whitelist": [
+                "ibm"
+            ]
         },
         {
             "id": 45,
             "cname": "ION",
-            "whitelist": []
+            "whitelist": [
+                "ion"
+            ]
         },
         {
             "id": 46,
             "cname": "Tech Mahindra",
-            "whitelist": []
+            "whitelist": [
+                "techmahindra",
+                "tech mahindra"
+            ]
         },
         {
             "id": 47,
             "cname": "U U R M I",
-            "whitelist": []
+            "whitelist": [
+                "uurmi",
+                "u u r m i"
+            ]
         },
         {
             "id": 48,
             "cname": "Shoretel",
-            "whitelist": []
+            "whitelist": [
+                "shoretel"
+            ]
         },
         {
             "id": 49,
             "cname": "CK Birla",
-            "whitelist": []
+            "whitelist": [
+                "ckbirla",
+                "ck birla"
+            ]
         },
         {
             "id": 50,
             "cname": "SalesForce",
-            "whitelist": []
+            "whitelist": [
+                "salesforce",
+                "sales force"
+            ]
         },
         {
             "id": 51,
             "cname": "Atlas Corp",
-            "whitelist": []
+            "whitelist": [
+                "atlascorp",
+                "atlas corp",
+                "atlas corporation"
+            ]
         },
         {
             "id": 52,
             "cname": "Hexagon India",
-            "whitelist": []
+            "whitelist": [
+                "hexagon india",
+                "hexagon"
+            ]
         },
         {
             "id": 53,
             "cname": "Mars International",
-            "whitelist": []
+            "whitelist": [
+                "mars international",
+                "mars"
+            ]
         },
         {
             "id": 54,
             "cname": "Schneider Electric",
-            "whitelist": []
+            "whitelist": [
+                "schneiderelectric",
+                "schneider electric"
+            ]
         },
         {
             "id": 55,
             "cname": "K & S Partners",
-            "whitelist": []
+            "whitelist": [
+                "k&s",
+                "k&s partners",
+                "k & s partners"
+            ]
         },
         {
             "id": 56,
             "cname": "Balco",
-            "whitelist": []
+            "whitelist": [
+                "balco"
+            ]
         }
     ]
 }

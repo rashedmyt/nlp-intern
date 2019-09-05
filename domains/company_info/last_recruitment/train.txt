@@ -15,3 +15,9 @@ Which year did {oracle|company_name} came to clg last time
 When {oracle|company_name} came to clg last time
 {oracle|company_name} when came last time
 {oracle|company_name} which year came last time
+When did {oracle|company_name} came for recruitments last time?
+Which year did {oracle|company_name} came for recruitments last time
+When {oracle|company_name} came for recruitments last time
+When did {oracle|company_name} came to recruitments last time?
+Which year did {oracle|company_name} came to recruitments last time
+When {oracle|company_name} came to recruitments last time
