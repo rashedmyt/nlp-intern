@@ -1,0 +1,25 @@
+{2015|sys_time}
+in {2015|sys_time}
+{last year|sys_time}
+in {last year|sys_time}
+{de shaw|company_name}
+something like {de shaw|company_name}
+like {jp morgan|company_name}
+from {cse|dept_name}
+{cse|dept_name}
+in {cse|dept_name}
+for {cse|dept_name}
+from {cse|dept_name} in {2015|sys_time}
+{cse|dept_name} in {2015|sys_time}
+in {cse|dept_name} in {2015|sys_time}
+for {cse|dept_name} in {2015|sys_time}
+from {cse|dept_name} {last year|sys_time}
+{cse|dept_name} {last year|sys_time}
+in {cse|dept_name} {last year|sys_time}
+for {cse|dept_name} {last year|sys_time}
+{de shaw|company_name} in {2015|sys_time}
+something like {de shaw|company_name} in {2015|sys_time}
+like {jp morgan|company_name} in {2015|sys_time}
+{de shaw|company_name} {last year|sys_time}
+something like {de shaw|company_name} {last year|sys_time}
+like {jp morgan|company_name} {last year|sys_time}

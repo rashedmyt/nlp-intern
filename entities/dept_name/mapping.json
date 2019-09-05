@@ -4,42 +4,58 @@
             "id": "CSE",
             "cname": "CSE",
             "whitelist": [
-                "cse"
+                "cse",
+                "computers",
+                "computer science",
+                "computer science and engineering"
             ]
         },
         {
             "id": "CIVIL",
             "cname": "CIVIL",
             "whitelist": [
-                "civil"
+                "civil",
+                "civil engineering"
             ]
         },
         {
             "id": "ECE",
             "cname": "ECE",
             "whitelist": [
-                "ece"
+                "ece",
+                "electronics",
+                "electronics and communications engineering",
+                "electronics and communications"
             ]
         },
         {
             "id": "EEE",
             "cname": "EEE",
             "whitelist": [
-                "eee"
+                "eee",
+                "electrical",
+                "electrical and electronics engineering",
+                "electrical and electronics",
+                "electrical engineering"
             ]
         },
         {
             "id": "MECH",
             "cname": "MECH",
             "whitelist": [
-                "mech"
+                "mech",
+                "mechanical",
+                "mechanical engineering"
             ]
         },
         {
             "id": "BME",
             "cname": "BME",
             "whitelist": [
-                "bme"
+                "bme",
+                "bio-medical",
+                "bio medical",
+                "bio medical engineering"
             ]
         }
     ]

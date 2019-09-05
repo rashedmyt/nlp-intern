@@ -1,0 +1,24 @@
+how many companies gave salary less than {1|sys_number}
+how many companies gave salary less than {1|sys_number} lpa
+how many companies gave salary less than {1|sys_number} in {2015|sys_time}
+how many companies gave salary less than {1|sys_number} {last year|sys_time}
+how many companies gave salary less than {1|sys_number} lpa in {2015|sys_time}
+how many companies gave salary less than {1|sys_number} lpa {last year|sys_time}
+how many companies gave salary lower than {1|sys_number}
+how many companies gave salary lower than {1|sys_number} lpa
+how many companies gave salary lower than {1|sys_number} in {2015|sys_time}
+how many companies gave salary lower than {1|sys_number} {last year|sys_time}
+how many companies gave salary lower than {1|sys_number} lpa in {2015|sys_time}
+how many companies gave salary lower than {1|sys_number} lpa {last year|sys_time}
+how many companies with salary less than {1|sys_number}
+how many companies with salary less than {1|sys_number} lpa
+how many companies with salary less than {1|sys_number} in {2015|sys_time}
+how many companies with salary less than {1|sys_number} {last year|sys_time}
+how many companies with salary less than {1|sys_number} lpa in {2015|sys_time}
+how many companies with salary less than {1|sys_number} lpa {last year|sys_time}
+how many companies with salary lower than {1|sys_number}
+how many companies with salary lower than {1|sys_number} lpa
+how many companies with salary lower than {1|sys_number} in {2015|sys_time}
+how many companies with salary lower than {1|sys_number} {last year|sys_time}
+how many companies with salary lower than {1|sys_number} lpa in {2015|sys_time}
+how many companies with salary lower than {1|sys_number} lpa {last year|sys_time}

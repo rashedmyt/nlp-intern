@@ -6,12 +6,12 @@ from nlp_intern.logger import create_feedback_file
 @app.handle(intent='last_recruitment')
 def company_last_year(request, responder):
     create_feedback_file('company_info', request)
-    _, company_name, _ = extract_entities(request)
+    _, company_name, dept_name = extract_entities(request)
 
     responder.frame['desired_action'] = "last_recruitment"
 
     if company_name:
-        handle_last_recruitment(company_name, responder)
+        handle_last_recruitment(company_name, dept_name, responder)
     else:
         responder.reply(
             "Sure, which company's last recruitment would you like to know?")

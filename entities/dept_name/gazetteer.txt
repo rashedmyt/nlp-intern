@@ -1,6 +1,19 @@
 Computer Science
-Mechanical
-Electrical
-Civil
-Bio-Medical
-Electronics
+Mechanical Engineering
+Electrical Engineering
+Civil Engineering
+Bio-Medical Engineering
+Electronics Engineering
+CSE
+BME
+MECH
+EEE
+ECE
+CIVIL
+Computer Engineering
+Computer Science and Engineering
+Electrical and Electronics Engineering
+Electronics and Communications Engineering
+Bio Medical Engineering
+Electrical and Electronics
+Electronics and Communications

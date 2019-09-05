@@ -21,3 +21,72 @@ When {oracle|company_name} came for recruitments last time
 When did {oracle|company_name} came to recruitments last time?
 Which year did {oracle|company_name} came to recruitments last time
 When {oracle|company_name} came to recruitments last time
+When did {oracle|company_name} came last time for {civil|dept_name}?
+Which year did {oracle|company_name} came last time for {civil|dept_name}
+When {oracle|company_name} came last time for {civil|dept_name}
+When did {oracle|company_name} came for placements last time for {civil|dept_name}?
+Which year did {oracle|company_name} came for placements last time for {civil|dept_name}
+When {oracle|company_name} came for placements last time for {civil|dept_name}
+When did {oracle|company_name} came to placements last time for {civil|dept_name}?
+Which year did {oracle|company_name} came to placements last time for {civil|dept_name}
+When {oracle|company_name} came to placements last time for {civil|dept_name}
+When did {oracle|company_name} came to college last time for {civil|dept_name}?
+Which year did {oracle|company_name} came to college last time for {civil|dept_name}
+When {oracle|company_name} came to college last time for {civil|dept_name}
+When did {oracle|company_name} came to clg last time for {civil|dept_name}?
+Which year did {oracle|company_name} came to clg last time for {civil|dept_name}
+When {oracle|company_name} came to clg last time for {civil|dept_name}
+{oracle|company_name} when came last time for {civil|dept_name}
+{oracle|company_name} which year came last time for {civil|dept_name}
+When did {oracle|company_name} came for recruitments last time for {civil|dept_name}?
+Which year did {oracle|company_name} came for recruitments last time for {civil|dept_name}
+When {oracle|company_name} came for recruitments last time for {civil|dept_name}
+When did {oracle|company_name} came to recruitments last time for {civil|dept_name}?
+Which year did {oracle|company_name} came to recruitments last time for {civil|dept_name}
+When {oracle|company_name} came to recruitments last time for {civil|dept_name}
+When did {oracle|company_name} came last?
+Which year did {oracle|company_name} came last
+When {oracle|company_name} came last
+When did {oracle|company_name} came for placements last?
+Which year did {oracle|company_name} came for placements last
+When {oracle|company_name} came for placements last
+When did {oracle|company_name} came to placements last?
+Which year did {oracle|company_name} came to placements last
+When {oracle|company_name} came to placements last
+When did {oracle|company_name} came to college last?
+Which year did {oracle|company_name} came to college last
+When {oracle|company_name} came to college last
+When did {oracle|company_name} came to clg last?
+Which year did {oracle|company_name} came to clg last
+When {oracle|company_name} came to clg last
+{oracle|company_name} when came last
+{oracle|company_name} which year came last
+When did {oracle|company_name} came for recruitments last?
+Which year did {oracle|company_name} came for recruitments last
+When {oracle|company_name} came for recruitments last
+When did {oracle|company_name} came to recruitments last?
+Which year did {oracle|company_name} came to recruitments last
+When {oracle|company_name} came to recruitments last
+When did {oracle|company_name} came last for {civil|dept_name}?
+Which year did {oracle|company_name} came last for {civil|dept_name}
+When {oracle|company_name} came last for {civil|dept_name}
+When did {oracle|company_name} came for placements last for {civil|dept_name}?
+Which year did {oracle|company_name} came for placements last for {civil|dept_name}
+When {oracle|company_name} came for placements last for {civil|dept_name}
+When did {oracle|company_name} came to placements last for {civil|dept_name}?
+Which year did {oracle|company_name} came to placements last for {civil|dept_name}
+When {oracle|company_name} came to placements last for {civil|dept_name}
+When did {oracle|company_name} came to college last for {civil|dept_name}?
+Which year did {oracle|company_name} came to college last for {civil|dept_name}
+When {oracle|company_name} came to college last for {civil|dept_name}
+When did {oracle|company_name} came to clg last for {civil|dept_name}?
+Which year did {oracle|company_name} came to clg last for {civil|dept_name}
+When {oracle|company_name} came to clg last for {civil|dept_name}
+{oracle|company_name} when came last for {civil|dept_name}
+{oracle|company_name} which year came last for {civil|dept_name}
+When did {oracle|company_name} came for recruitments last for {civil|dept_name}?
+Which year did {oracle|company_name} came for recruitments last for {civil|dept_name}
+When {oracle|company_name} came for recruitments last for {civil|dept_name}
+When did {oracle|company_name} came to recruitments last for {civil|dept_name}?
+Which year did {oracle|company_name} came to recruitments last for {civil|dept_name}
+When {oracle|company_name} came to recruitments last for {civil|dept_name}

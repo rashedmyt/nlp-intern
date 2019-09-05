@@ -1,0 +1,18 @@
+how many companies gave {1|sys_number} lpa salary
+how many companies gave {1|sys_number} lpa salary in {2015|sys_time}
+how many companies gave {1|sys_number} lpa salary {last year|sys_time}
+how many companies with {1|sys_number} lpa salary
+how many companies with {1|sys_number} lpa salary in {2015|sys_time}
+how many companies with {1|sys_number} lpa salary {last year|sys_time}
+how many companies gave salary as {1|sys_number} lpa
+how many companies gave salary as {1|sys_number} lpa in {2015|sys_time}
+how many companies gave salary as {1|sys_number} lpa {last year|sys_time}
+how many companies with salary as {1|sys_number} lpa
+how many companies with salary as {1|sys_number} lpa in {2015|sys_time}
+how many companies with salary as {1|sys_number} lpa {last year|sys_time}
+how many companies gave salary of {1|sys_number} lpa
+how many companies gave salary of {1|sys_number} lpa in {2015|sys_time}
+how many companies gave salary of {1|sys_number} lpa {last year|sys_time}
+how many companies with salary of {1|sys_number} lpa
+how many companies with salary of {1|sys_number} lpa in {2015|sys_time}
+how many companies with salary of {1|sys_number} lpa {last year|sys_time}

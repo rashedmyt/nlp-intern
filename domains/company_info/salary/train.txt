@@ -1,18 +1,19 @@
-What is the salary given
+What is the salary
 salary given
+how much salary
 What is the salary given by {oracle|company_name}
-salary given by {oracle|company_name}
-salary by {oracle|company_name}
-What is the salary given by {oracle|company_name} in {2015|sys_time}
-salary given by {oracle|company_name} in {2015|sys_time}
-salary by {oracle|company_name} in {2015|sys_time}
-What is the salary given by {oracle|company_name} {last year|sys_time}
-salary given by {oracle|company_name} {last year|sys_time}
-salary by {oracle|company_name} {last year|sys_time}
+salary given by {fmc|company_name}
+salary by {wipro|company_name}
+What is the salary given by {de shaw|company_name} in {2015|sys_time}
+salary given by {google|company_name} in {2015|sys_time}
+salary by {mathworks|company_name} in {2015|sys_time}
+What is the salary given by {service now|company_name} {last year|sys_time}
+salary given by {accenture|company_name} {last year|sys_time}
+salary by {deloitte|company_name} {last year|sys_time}
 What is the salary given in {2015|sys_time}
 salary given in {2015|sys_time}
 salary in {2015|sys_time}
 What is the salary given {last year|sys_time}
 salary given {last year|sys_time}
 salary {last year|sys_time}
-{oracle|company_name} salary
+{capgemini|company_name} salary

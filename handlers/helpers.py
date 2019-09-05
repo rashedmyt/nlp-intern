@@ -2,18 +2,15 @@ from nlp_intern.root import app, qa
 from nlp_intern.logger import create_feedback_file
 
 
-@app.handle(intent='specify_company')
-def specify_company(request, responder):
+@app.handle(intent='specify_entity')
+def specify_entity(request, responder):
     create_feedback_file('helpers', request)
-    year = request.frame.get('year')
-    dept_name = request.frame.get('dept_name')
-    company_name = next((e['value'][0]['cname']
-                         for e in request.entities if e['type'] == 'company_name'), None)
+    year, company_name, dept_name = extract_entities(request)
 
     if company_name:
         try:
             if request.frame['desired_action'] == "last_recruitment":
-                handle_last_recruitment(company_name, responder)
+                handle_last_recruitment(company_name, dept_name, responder)
             elif request.frame['desired_action'] == "salary":
                 handle_salary(company_name, year, responder)
             elif request.frame['desired_action'] == 'total_recruits':
@@ -23,31 +20,6 @@ def specify_company(request, responder):
                 else:
                     handle_total_recruits(company_name, year, 'all', responder)
 
-        except KeyError:
-            responder.reply("Please specify some action")
-    else:
-        responder.reply(
-            "Not sure which company you meant there. Can you please try again?")
-
-
-@app.handle(intent='specify_year')
-def specify_year(request, responder):
-    create_feedback_file('helpers', request)
-    company_name = request.frame.get('company_name')
-    dept_name = request.frame.get('dept_name')
-    year = next((e['value'][0]['value'][0:4]
-                 for e in request.entities if e['type'] == 'sys_time'), None)
-
-    if company_name:
-        try:
-            if request.frame['desired_action'] == "salary":
-                handle_salary(company_name, year, responder)
-            elif request.frame['desired_action'] == 'total_recruits':
-                if dept_name:
-                    handle_total_recruits(
-                        company_name, year, dept_name, responder)
-                else:
-                    handle_total_recruits(company_name, year, 'all', responder)
         except KeyError:
             responder.reply("Please specify some action")
     else:
@@ -104,14 +76,27 @@ def handle_companies_list(category, year, responder):
     responder.reply(reply)
 
 
-def handle_last_recruitment(company_name, responder):
+def handle_last_recruitment(company_name, category, responder):
     company = qa.get(index='companies', name=company_name)[0]
-    last_recruitment_year = sorted(company['data'].keys())[-1]
+
+    if category:
+        last_recruitment_year = next(
+            (i for i in company['data'] if category in company['data'][i]), None)
+    else:
+        last_recruitment_year = sorted(company['data'].keys())[-1]
 
     responder.frame['company_name'] = company_name
     responder.frame['year'] = last_recruitment_year
+    responder.frame['dept_name'] = category
 
-    reply = company_name + " last came for placements in " + last_recruitment_year
+    reply = company_name
+    if last_recruitment_year:
+        reply += " last came for placements in " + last_recruitment_year
+        if category:
+            reply += " for " + category
+    elif category:
+        reply += " didn't came for placements for " + category
+
     responder.reply(reply)
 
 
@@ -119,7 +104,6 @@ def handle_salary(company_name, year, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
-    responder.frame['desired_action'] = "salary"
     if year:
         responder.frame['year'] = year
 
@@ -135,6 +119,7 @@ def handle_salary(company_name, year, responder):
         reply = company_name + " didn't came for placements in " + year
         responder.reply(reply)
     else:
+        responder.frame['desired_action'] = 'salary'
         responder.reply("Of course, which year?")
         responder.listen()
 
@@ -143,7 +128,9 @@ def handle_total_recruits(company_name, year, category, responder):
     company = qa.get(index='companies', name=company_name)[0]
 
     responder.frame['company_name'] = company_name
-    responder.frame['desired_action'] = "total_recruits"
+
+    if category != "all":
+        responder.frame['dept_name'] = category
 
     if year:
         responder.frame['year'] = year
@@ -172,5 +159,6 @@ def handle_total_recruits(company_name, year, category, responder):
         reply = company_name + " didn't came for placements in " + year
         responder.reply(reply)
     else:
+        responder.frame['desired_action'] = 'total_recruits'
         responder.reply("Of course, which year?")
         responder.listen()

@@ -1,0 +1,2 @@
+companies with salary less than seven lpa
+how many companies gave salary lower than 8.5 in 2017

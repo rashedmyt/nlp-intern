@@ -1,3 +1,0 @@
-{Oracle|company_name}
-something like {google|company_name}
-like {google|company_name}
